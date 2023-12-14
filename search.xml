@@ -129,6 +129,9 @@
 <li><p>下面介绍本人添加图片的方式</p>
 <p><img src="/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%7BC7FF0106-F474-4832-8C87-07B4EC59A7DC%7D.png" alt="{C7FF0106-F474-4832-8C87-07B4EC59A7DC}"></p>
 </li>
+<li><p>原来的配置文件可以使用网络图片链接</p>
+<p><img src="/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%7B89D73CFA-E052-42C3-9D8C-FB573409D26D%7D.png" alt="{89D73CFA-E052-42C3-9D8C-FB573409D26D}"></p>
+</li>
 </ol>
 <h3 id="下面是Windows端cmd常用命令"><a href="#下面是Windows端cmd常用命令" class="headerlink" title="下面是Windows端cmd常用命令"></a>下面是Windows端cmd常用命令</h3> <figure class="highlight plaintext"><figcaption><span>#查看当前目录</span></figcaption><table><tr><td class="code"><pre><span class="line">e: #进入e盘</span><br><span class="line">md cs #新建文件夹cs</span><br><span class="line">cd cs #进入文件夹cs</span><br><span class="line">dir -w 查看文件下有什么文件</span><br><span class="line">cd .. 返回上级目录</span><br><span class="line">cd ../.. 返回两级目录</span><br></pre></td></tr></table></figure>
 
