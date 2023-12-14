@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>cs2</title>
+    <url>/2023/12/15/cs2/</url>
+    <content><![CDATA[<p><img src="/2023/12/15/cs2/%7B3CA8277B-0CA8-408E-A49D-5420A5AFDEA3%7D.png" alt="{3CA8277B-0CA8-408E-A49D-5420A5AFDEA3}"></p>
+<p>使用本地图库命令</p>
+<p>hexo n cs2</p>
+<p>source下有对应文件</p>
+]]></content>
+  </entry>
+  <entry>
     <title>测试图床</title>
     <url>/2023/12/15/cs1/</url>
     <content><![CDATA[<p>测试图床</p>
@@ -91,8 +100,37 @@
 <li>参考这个安装（exe安装一般不会出现什么问题）<a href="https://blog.csdn.net/weixin_44835732/article/details/104906631">安装git，解决”git 不是内部或外部命令，也不是可运行的程序”问题_gir不是内部或外部命令-CSDN博客</a></li>
 </ul>
 <ol start="2">
-<li>安装hexo git插件<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">   cnpm install --save hexo-deployer-git</span><br><span class="line">3. git提交或克隆报错fatal: unable to access</span><br><span class="line">- 参考https://blog.csdn.net/HZC0217/article/details/121876026</span><br><span class="line">- ```</span><br><span class="line">  git config --global --unset http.proxy//取消http代理 </span><br><span class="line">  git config --global --unset https.proxy//取消https代理 </span><br><span class="line"></span><br><span class="line">3. Git第一次初始化项目到远程仓库</span><br><span class="line">   - 使用科学上网</span><br><span class="line">   - 更改ssh[Git第一次初始化项目到远程仓库_git 初始化远程仓库-CSDN博客](https://blog.csdn.net/flytalei/article/details/129552860)</span><br><span class="line">4. 在hexo下配置git</span><br><span class="line"></span><br><span class="line">   - ![&#123;B1E92BAC-FAF1-4EC7-84EC-9DF13B4BE671&#125;](我的博客搭建/&#123;B1E92BAC-FAF1-4EC7-84EC-9DF13B4BE671&#125;.png)</span><br><span class="line">5. 接下来进行部署远端git 使用hexo d 进行推送</span><br><span class="line">6. 每次使用推送 就需要在GitHub端重置域名</span><br><span class="line">   - 在本地hexo source 下手动创建CNAME</span><br><span class="line">   - 然后再使用hexo -g d 进行推送GitHub</span><br><span class="line">7. </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> ```chdir #查看当前目录</span><br><span class="line">   e: #进入e盘</span><br><span class="line">   md cs #新建文件夹cs</span><br><span class="line">   cd cs #进入文件夹cs</span><br><span class="line">   dir -w 查看文件下有什么文件</span><br><span class="line">   cd .. 返回上级目录</span><br><span class="line">   cd ../.. 返回两级目录</span><br></pre></td></tr></table></figure></li>
+<li>安装hexo git插件<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure></li>
+<li>git提交或克隆报错fatal: unable to access</li>
 </ol>
+<ul>
+<li>参考<a href="https://blog.csdn.net/HZC0217/article/details/121876026">https://blog.csdn.net/HZC0217/article/details/121876026</a><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global --unset http.proxy//取消http代理 </span><br><span class="line">git config --global --unset https.proxy//取消https代理 </span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="3">
+<li><p>Git第一次初始化项目到远程仓库</p>
+<ul>
+<li>使用科学上网</li>
+<li>更改ssh<a href="https://blog.csdn.net/flytalei/article/details/129552860">Git第一次初始化项目到远程仓库_git 初始化远程仓库-CSDN博客</a></li>
+</ul>
+</li>
+<li><p>在hexo下配置git</p>
+<ul>
+<li><img src="/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%7BB1E92BAC-FAF1-4EC7-84EC-9DF13B4BE671%7D.png" alt="{B1E92BAC-FAF1-4EC7-84EC-9DF13B4BE671}"></li>
+</ul>
+</li>
+<li><p>接下来进行部署远端git 使用hexo d 进行推送</p>
+</li>
+<li><p>每次使用推送 就需要在GitHub端重置域名</p>
+<ul>
+<li>在本地hexo source 下手动创建CNAME</li>
+<li>然后再使用hexo -g d 进行推送GitHub</li>
+</ul>
+</li>
+<li></li>
+</ol>
+ <figure class="highlight plaintext"><figcaption><span>#查看当前目录</span></figcaption><table><tr><td class="code"><pre><span class="line">e: #进入e盘</span><br><span class="line">md cs #新建文件夹cs</span><br><span class="line">cd cs #进入文件夹cs</span><br><span class="line">dir -w 查看文件下有什么文件</span><br><span class="line">cd .. 返回上级目录</span><br><span class="line">cd ../.. 返回两级目录</span><br></pre></td></tr></table></figure>
+
+
 <p><img src="/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(4).png" alt="(4)"></p>
 <p>1、使用”Win+r“快捷键并输入“cmd”打开控制台</p>
 <p>2、输入“d:”进入d盘</p>
