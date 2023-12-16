@@ -32,7 +32,7 @@
   </entry>
   <entry>
     <title>我的个人博客</title>
-    <url>/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <url>/2023/12/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h1 id="记录一下个人第一次建站的教程"><a href="#记录一下个人第一次建站的教程" class="headerlink" title="记录一下个人第一次建站的教程"></a>记录一下个人第一次建站的教程</h1><h4 id="视频参考codesheep-up主的视频"><a href="#视频参考codesheep-up主的视频" class="headerlink" title="视频参考codesheep up主的视频"></a>视频参考codesheep up主的视频</h4><h4 id="使用win10版本"><a href="#使用win10版本" class="headerlink" title="使用win10版本"></a>使用win10版本</h4><h2 id="建站原理"><a href="#建站原理" class="headerlink" title="建站原理"></a>建站原理</h2><ol>
 <li>使用hexo加github代码托管平台进行建站</li>
 <li>通过阿里云域名解析至代码托管平台</li>
@@ -45,7 +45,7 @@
 <li><p>node -v &#x2F;&#x2F;显示node.js版本</p>
 </li>
 <li><p>npm -v &#x2F;&#x2F;显示npm版本</p>
-<p><img src="/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(1).png" alt="(1)"></p>
+<p><img src="/2023/12/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(1).png" alt="(1)"></p>
 </li>
 </ul>
 </li>
@@ -62,10 +62,10 @@
 </ul>
 <ol start="2">
 <li><p>配置<strong>系统</strong>环境变量</p>
-<p><img src="/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(7).png" alt="(7)"></p>
+<p><img src="/2023/12/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(7).png" alt="(7)"></p>
 <p><em>注意：变量值应是你node_modules的目录。</em><br><em>如果确定后没有新建node_modules文件夹，需在node_global下手动创建一个node_modules文件夹，再复制你创建的node_modules文件夹的路径地址到变量值</em></p>
 </li>
-<li><p>配置<strong>用户</strong>变量中的path<br><img src="/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(3).png" alt="(3)"></p>
+<li><p>配置<strong>用户</strong>变量中的path<br><img src="/2023/12/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(3).png" alt="(3)"></p>
 </li>
 <li><p>测试是否安装成功</p>
 </li>
@@ -74,7 +74,7 @@
 <li><p>npm install express -g   &#x2F;&#x2F; -g代表全局安装</p>
 </li>
 <li><p>出现以下界面为成功安装淘宝镜像</p>
-<p><img src="/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(6).png" alt="(6)"></p>
+<p><img src="/2023/12/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(6).png" alt="(6)"></p>
 </li>
 </ul>
 <ol start="5">
@@ -96,7 +96,7 @@
 <li><p>hexo s 启动博客</p>
 </li>
 <li><p>hexo n cs 新建cs博客</p>
-<p><img src="/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(2).png" alt="(2)"></p>
+<p><img src="/2023/12/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(2).png" alt="(2)"></p>
 </li>
 <li><p>hexo clean 清理缓存</p>
 </li>
@@ -129,7 +129,7 @@
 </li>
 <li><p>在hexo下配置git</p>
 <ul>
-<li><img src="/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%7BB1E92BAC-FAF1-4EC7-84EC-9DF13B4BE671%7D.png" alt="{B1E92BAC-FAF1-4EC7-84EC-9DF13B4BE671}"></li>
+<li><img src="/2023/12/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%7BB1E92BAC-FAF1-4EC7-84EC-9DF13B4BE671%7D.png" alt="{B1E92BAC-FAF1-4EC7-84EC-9DF13B4BE671}"></li>
 </ul>
 </li>
 <li><p>接下来进行部署远端git 使用hexo d 进行推送</p>
@@ -141,16 +141,24 @@
 </ul>
 </li>
 <li><p>下面介绍本人添加图片的方式</p>
-<p><img src="/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%7BC7FF0106-F474-4832-8C87-07B4EC59A7DC%7D.png" alt="{C7FF0106-F474-4832-8C87-07B4EC59A7DC}"></p>
+<p><img src="/2023/12/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%7BC7FF0106-F474-4832-8C87-07B4EC59A7DC%7D.png" alt="{C7FF0106-F474-4832-8C87-07B4EC59A7DC}"></p>
 </li>
 <li><p>原来的配置文件可以使用网络图片链接</p>
-<p><img src="/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%7B89D73CFA-E052-42C3-9D8C-FB573409D26D%7D.png" alt="{89D73CFA-E052-42C3-9D8C-FB573409D26D}"></p>
+<p><img src="/2023/12/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%7B89D73CFA-E052-42C3-9D8C-FB573409D26D%7D.png" alt="{89D73CFA-E052-42C3-9D8C-FB573409D26D}"></p>
 </li>
 </ol>
+<h3 id="关于hexo-d上传所遇到的问题"><a href="#关于hexo-d上传所遇到的问题" class="headerlink" title="关于hexo d上传所遇到的问题"></a>关于hexo d上传所遇到的问题</h3><ol>
+<li>报错信息 RPC failed; curl 56 Recv failure: Connection was reset</li>
+</ol>
+<ul>
+<li>排查 使用hexo clean &amp;&amp; hexo g &amp;&amp; hexo s<br>  清除缓存后，本地生成文件，在进行预览，发现没有报错<br>  则发现问题为上传时出现的问题</li>
+<li>原因git 上传时受到容量限制 </li>
+<li>解决办法 git config –global http.postBuffer 1048576000 #注意1048576000为1GB</li>
+</ul>
 <h3 id="下面是Windows端cmd常用命令"><a href="#下面是Windows端cmd常用命令" class="headerlink" title="下面是Windows端cmd常用命令"></a>下面是Windows端cmd常用命令</h3> <figure class="highlight plaintext"><figcaption><span>#查看当前目录</span></figcaption><table><tr><td class="code"><pre><span class="line">e: #进入e盘</span><br><span class="line">md cs #新建文件夹cs</span><br><span class="line">cd cs #进入文件夹cs</span><br><span class="line">dir -w 查看文件下有什么文件</span><br><span class="line">cd .. 返回上级目录</span><br><span class="line">cd ../.. 返回两级目录</span><br></pre></td></tr></table></figure>
 
 
-<p><img src="/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(4).png" alt="(4)"></p>
+<p><img src="/2023/12/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(4).png" alt="(4)"></p>
 <p>1、使用”Win+r“快捷键并输入“cmd”打开控制台</p>
 <p>2、输入“d:”进入d盘</p>
 <p>3、输入“cd  Program Files”进入“Program Files”文件夹内（可使用tab键补全文件夹名字）</p>
@@ -163,7 +171,28 @@
 <p>Initialized empty Git repository</p>
 <p>E:\blog&gt;start themes打开文件themes</p>
 <p>hexo更新<br><a href="https://blog.csdn.net/qq_33154343/article/details/108301374">https://blog.csdn.net/qq_33154343/article/details/108301374</a><br>注意 更新时在需在更新包的目录下使用命令进行更新</p>
-<p><img src="/2023/12/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(5).png" alt="(5)"></p>
+<p><img src="/2023/12/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/(5).png" alt="(5)"></p>
+]]></content>
+      <tags>
+        <tag>个人博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[<p>clash</p>
+<p>gpt</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>留言</title>
+    <url>/messageboard/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>cs2</title>
+    <url>/rubbish/cs2.html</url>
+    <content><![CDATA[<p><img src="/rubbish/cs2.htm/(1).png" alt="(1)"></p>
 ]]></content>
   </entry>
   <entry>
@@ -238,34 +267,6 @@
 <p>E:\blog&gt;start themes打开文件themes</p>
 <p>hexo更新<br><a href="https://blog.csdn.net/qq_33154343/article/details/108301374">https://blog.csdn.net/qq_33154343/article/details/108301374</a><br>注意 更新时在需在更新包的目录下使用命令进行更新<br><img src="/rubbish/cs.htm/2023-12-14/ESPCjXunOIp0ISZm.png" alt="输入图片说明"></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[<p>clash</p>
-<p>gpt</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>我的第一篇博客文章</title>
-    <url>/rubbish/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0.html</url>
-    <content><![CDATA[<p>##标题1</p>
-<p>内容</p>
-<p>s<br>s</p>
-<p>##标题2</p>
-<p>以下开始测试</p>
-<p>#一级标题<br>##二级标题<br>###三级标题<br><strong>粗体</strong><br><em>斜体</em><br><em><strong>斜粗体</strong></em></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>留言</title>
-    <url>/messageboard/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title></title>
@@ -343,6 +344,22 @@
 ]]></content>
   </entry>
   <entry>
+    <title>我的第一篇博客文章</title>
+    <url>/rubbish/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0.html</url>
+    <content><![CDATA[<p>##标题1</p>
+<p>内容</p>
+<p>s<br>s</p>
+<p>##标题2</p>
+<p>以下开始测试</p>
+<p>#一级标题<br>##二级标题<br>###三级标题<br><strong>粗体</strong><br><em>斜体</em><br><em><strong>斜粗体</strong></em></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/rubbish/hello-world.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -358,12 +375,6 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>cs2</title>
-    <url>/rubbish/cs2.html</url>
-    <content><![CDATA[<p><img src="/rubbish/cs2.htm/(1).png" alt="(1)"></p>
 ]]></content>
   </entry>
 </search>
