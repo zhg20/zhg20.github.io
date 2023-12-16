@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>cs1</title>
-    <url>/2023/12/15/cs1/</url>
-    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(13).png" alt="  (13)"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>我的个人博客</title>
     <url>/2023/12/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h1 id="记录一下个人第一次建站的教程"><a href="#记录一下个人第一次建站的教程" class="headerlink" title="记录一下个人第一次建站的教程"></a>记录一下个人第一次建站的教程</h1><h4 id="视频参考codesheep-up主的视频"><a href="#视频参考codesheep-up主的视频" class="headerlink" title="视频参考codesheep up主的视频"></a>视频参考codesheep up主的视频</h4><h4 id="使用win10版本"><a href="#使用win10版本" class="headerlink" title="使用win10版本"></a>使用win10版本</h4><h2 id="建站原理"><a href="#建站原理" class="headerlink" title="建站原理"></a>建站原理</h2><ol>
@@ -131,6 +125,12 @@
 <li>原因git 上传时受到容量限制 </li>
 <li>解决办法 git config –global http.postBuffer 1048576000 #注意1048576000为1GB</li>
 </ul>
+<h3 id="美化主题"><a href="#美化主题" class="headerlink" title="美化主题"></a>美化主题</h3><ol>
+<li>顶部图和网站背景图透明的办法</li>
+</ol>
+<ul>
+<li>修改 Butterfly 的配置文件 _config.butterfly.yml。<br>编辑 index_img、background、footer_bg、mask.header 选项。<br>设置网站背景，将主页顶部图和页脚背景改为透明，移除顶部图的黑色半透遮罩。<br>(需要将示例地址替换为自己的图片地址。)</li>
+</ul>
 <h3 id="下面是Windows端cmd常用命令"><a href="#下面是Windows端cmd常用命令" class="headerlink" title="下面是Windows端cmd常用命令"></a>下面是Windows端cmd常用命令</h3> <figure class="highlight plaintext"><figcaption><span>#查看当前目录</span></figcaption><table><tr><td class="code"><pre><span class="line">e: #进入e盘</span><br><span class="line">md cs #新建文件夹cs</span><br><span class="line">cd cs #进入文件夹cs</span><br><span class="line">dir -w 查看文件下有什么文件</span><br><span class="line">cd .. 返回上级目录</span><br><span class="line">cd ../.. 返回两级目录</span><br></pre></td></tr></table></figure>
 
 
@@ -176,6 +176,23 @@
       <tags>
         <tag>摄影</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>cs1</title>
+    <url>/2023/12/15/cs1/</url>
+    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(13).png" alt="  (13)"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>cs2</title>
+    <url>/rubbish/cs2.html</url>
+    <content><![CDATA[<p><img src="/rubbish/cs2.htm/(1).png" alt="(1)"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>留言</title>
+    <url>/messageboard/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>标签</title>
@@ -258,6 +275,35 @@
 ]]></content>
   </entry>
   <entry>
+    <title>我的第一篇博客文章</title>
+    <url>/rubbish/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0.html</url>
+    <content><![CDATA[<p>##标题1</p>
+<p>内容</p>
+<p>s<br>s</p>
+<p>##标题2</p>
+<p>以下开始测试</p>
+<p>#一级标题<br>##二级标题<br>###三级标题<br><strong>粗体</strong><br><em>斜体</em><br><em><strong>斜粗体</strong></em></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/rubbish/hello-world.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title></title>
     <url>/rubbish/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99.html</url>
     <content><![CDATA[<h1 id="记录一下个人第一次建站的教程"><a href="#记录一下个人第一次建站的教程" class="headerlink" title="记录一下个人第一次建站的教程"></a>记录一下个人第一次建站的教程</h1><h4 id="视频参考codesheep-up主的视频"><a href="#视频参考codesheep-up主的视频" class="headerlink" title="视频参考codesheep up主的视频"></a>视频参考codesheep up主的视频</h4><h4 id="使用win10版本"><a href="#使用win10版本" class="headerlink" title="使用win10版本"></a>使用win10版本</h4><h2 id="建站原理"><a href="#建站原理" class="headerlink" title="建站原理"></a>建站原理</h2><ol>
@@ -333,48 +379,8 @@
 ]]></content>
   </entry>
   <entry>
-    <title>留言</title>
-    <url>/messageboard/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>cs2</title>
-    <url>/rubbish/cs2.html</url>
-    <content><![CDATA[<p><img src="/rubbish/cs2.htm/(1).png" alt="(1)"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>我的第一篇博客文章</title>
-    <url>/rubbish/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0.html</url>
-    <content><![CDATA[<p>##标题1</p>
-<p>内容</p>
-<p>s<br>s</p>
-<p>##标题2</p>
-<p>以下开始测试</p>
-<p>#一级标题<br>##二级标题<br>###三级标题<br><strong>粗体</strong><br><em>斜体</em><br><em><strong>斜粗体</strong></em></p>
-]]></content>
-  </entry>
-  <entry>
     <title>标签</title>
     <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/rubbish/hello-world.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
 </search>
