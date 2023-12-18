@@ -87,7 +87,13 @@
 </ul>
 <ol start="8">
 <li>收集关于nginx的命令<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo systemctl start nginx  #启动 Nginx 服务</span><br><span class="line">sudo systemctl enable nginx #启用 Nginx 服务</span><br><span class="line">sudo systemctl status nginx # 验证nginx的状态</span><br><span class="line"># Linux的重启命令：</span><br><span class="line">sudo systemctl restart YOUR_SERVICE_NAME</span><br><span class="line">sudo systemctl restart nginx #重启 nginx</span><br></pre></td></tr></table></figure></li>
+<li>关于域名访问的问题</li>
 </ol>
+<ul>
+<li>目前遇到的问题是，加www可以访问，不加wwww则不可以访问</li>
+<li>补充空白</li>
+</ul>
+<h2 id="临时性的问题"><a href="#临时性的问题" class="headerlink" title="临时性的问题"></a>临时性的问题</h2><p>1. </p>
 ]]></content>
       <tags>
         <tag>1111ci</tag>
@@ -279,22 +285,6 @@
       </tags>
   </entry>
   <entry>
-    <title>随笔（持续更新）</title>
-    <url>/2023/12/17/%E9%9A%8F%E7%AC%94%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/</url>
-    <content><![CDATA[<h3 id="不骄不躁-步步前行"><a href="#不骄不躁-步步前行" class="headerlink" title="不骄不躁 步步前行"></a>不骄不躁 步步前行</h3><ul>
-<li>前些日子突然间接触服务器，想到了我能不能在网站上搭建一个个人网站，想来想去不知道做什么网站最后想到搭建一个个人博客，在各大搜索平台了解了很多关于搭建个人博客，一开始的也没有想很多就是东西，比如说博客是由框架的还是说通过html网页语言编写，后来了解到有了框架，那就只需要配置框架，就认为这是一个很简单的事情（看教程都写的步骤的很短）所有没有开始执行，结果一一开始想到的时word press搭建，但是看到它的框架不太喜欢，于是</li>
-</ul>
-<p>思路<br>接触服务器<br>搭建服务器加个人博客<br>方案 阿里云服务器加wrodpress<br>了解个人博客<br>选各大博客框架中选择了hexo，博主说hexo的网上教程很多<br>选择hexo博客主题<br>hexo-butterfly的配置</p>
-<p>配置hexo配置遇到了许许多多的问题，涉及许多linux的命令（基础过Linux系统但是对命令行的使用一无所知），以至于我在配置的过程中，感叹到，这好像不是我可以做到的，感觉在挑战自己的极限，在拉高自己的极限，想过很多次放弃，但是想到都做到这一步了，还是继续做下去吧，于是经过一两天的熬夜耕耘，解决了hexo的配置</p>
-<p>解决问题 <em>详见我的个人博客</em></p>
-<p>既然搭建好了</p>
-<p>主题<br>一星期时间的配置，一个人从网上解决各种问题，从放弃到继续，从低谷到山顶，从茫然到豁然开朗，有时候如果遇到难以解决的问题可以适当的停下来，在茫然的时候，这边个人建议哪里迷茫就退回到上一步从头开始，想清楚自己要解决的是什么问题。<br>到了配置主题部分，我做了一个很错误的事情，在解决问题的时候由于教程过多，经常在各个教程之间徘徊，很急躁，我像一只无头苍蝇一样找出口，过于迷茫，就在那时存档，静下心来好好看一个教程，在某一个教程中看见官方技术文档永远是最好的文档，至此我开始看官方文档，虽然自己有很多看教程和解决问题的经验，但是看技术文档的事情还是第一次，一方面是因为文档太长，另一方面是因为过于急躁，急于求成，看了好几遍文档我开始慢慢的了解文档的思路，有了顺序有了方向，官方技术文档就是一个方向，不到一天解决了很多问题再结合各大同类型的博客，参照他们的GitHub仓库文档在和自己的对比，慢慢的解决了很多问题，至此我的个人博客完美搭建完毕。</p>
-]]></content>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>摄影记录（持续更新）</title>
     <url>/2023/12/15/%E6%91%84%E5%BD%B1%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/</url>
     <content><![CDATA[<h2 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h2><p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(5).png" alt="  (5)"></p>
@@ -319,100 +309,20 @@
       </tags>
   </entry>
   <entry>
-    <title>cs</title>
-    <url>/rubbish/cs.html</url>
-    <content><![CDATA[<h1 id="记录一下个人第一次建站的教程"><a href="#记录一下个人第一次建站的教程" class="headerlink" title="记录一下个人第一次建站的教程"></a>记录一下个人第一次建站的教程</h1><h4 id="视频参考codesheep-up主的视频"><a href="#视频参考codesheep-up主的视频" class="headerlink" title="视频参考codesheep up主的视频"></a>视频参考codesheep up主的视频</h4><h4 id="使用win10版本"><a href="#使用win10版本" class="headerlink" title="使用win10版本"></a>使用win10版本</h4><h2 id="建站原理"><a href="#建站原理" class="headerlink" title="建站原理"></a>建站原理</h2><ol>
-<li>使用hexo加github代码托管平台进行建站</li>
-<li>通过阿里云域名解析至代码托管平台</li>
-</ol>
-<h2 id="下面开始实行"><a href="#下面开始实行" class="headerlink" title="下面开始实行"></a>下面开始实行</h2><h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><h5 id="教程参考Node-js下载安装及环境配置教程【超详细】-nodejs下载-CSDN博客"><a href="#教程参考Node-js下载安装及环境配置教程【超详细】-nodejs下载-CSDN博客" class="headerlink" title="教程参考Node.js下载安装及环境配置教程【超详细】_nodejs下载-CSDN博客"></a>教程参考<a href="https://blog.csdn.net/WHF__/article/details/129362462">Node.js下载安装及环境配置教程【超详细】_nodejs下载-CSDN博客</a></h5><ul>
-<li><p>注意点</p>
-</li>
-<li><p>安装完使用下列命令测试是否安装成功</p>
-<ul>
-<li><p>node -v &#x2F;&#x2F;显示node.js版本</p>
-</li>
-<li><p>npm -v &#x2F;&#x2F;显示npm版本</p>
-<p>![  (1)](..&#x2F;imgs&#x2F;cs&#x2F;  (1).png)</p>
-</li>
+    <title>随笔（持续更新）</title>
+    <url>/2023/12/17/%E9%9A%8F%E7%AC%94%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/</url>
+    <content><![CDATA[<h3 id="不骄不躁-步步前行"><a href="#不骄不躁-步步前行" class="headerlink" title="不骄不躁 步步前行"></a>不骄不躁 步步前行</h3><ul>
+<li>前些日子突然间接触服务器，想到了我能不能在网站上搭建一个个人网站，想来想去不知道做什么网站最后想到搭建一个个人博客，在各大搜索平台了解了很多关于搭建个人博客，一开始的也没有想很多就是东西，比如说博客是由框架的还是说通过html网页语言编写，后来了解到有了框架，那就只需要配置框架，就认为这是一个很简单的事情（看教程都写的步骤的很短）所有没有开始执行，结果一一开始想到的时word press搭建，但是看到它的框架不太喜欢，于是</li>
 </ul>
-</li>
-</ul>
-<ol>
-<li>下面进行node.js的环境配置<br>在安装目录新建2个文件夹</li>
-</ol>
-<ul>
-<li>【node_global】</li>
-<li>【node_cahe】<br>创建完毕后使用管理员命令打开cmd依次输入以下两个命令</li>
-<li>npm config set prefix “文件所在路径\node_global”</li>
-<li>npm config set cache “文件所在路径\node_cache”</li>
-<li>无报错 运行成功</li>
-</ul>
-<ol start="2">
-<li>配置<strong>系统</strong>环境变量<br><img src="/rubbish/cs.htm/2023-12-14/FB7zQJ6ljZpjnsIl.png" alt="输入图片说明"><br><em>注意：变量值应是你node_modules的目录。</em><br><em>如果确定后没有新建node_modules文件夹，需在node_global下手动创建一个node_modules文件夹，再复制你创建的node_modules文件夹的路径地址到变量值</em></li>
-<li>配置<strong>用户</strong>变量中的path<br><img src="/rubbish/cs.htm/2023-12-14/de3QhymUI6icTqu6.png" alt="输入图片说明"></li>
-<li>测试是否安装成功</li>
-</ol>
-<h4 id="注意使用管理员运行"><a href="#注意使用管理员运行" class="headerlink" title="注意使用管理员运行"></a>注意使用管理员运行</h4><ul>
-<li>npm install express -g   &#x2F;&#x2F; -g代表全局安装</li>
-<li>出现以下界面为成功<img src="/rubbish/cs.htm/2023-12-14/sro49Qrf2laOUqME.png" alt="输入图片说明"></li>
-</ul>
-<ol start="5">
-<li>安装淘宝镜像</li>
-<li>安装cnpm <em>个人建议安装</em></li>
-<li>出现问题检查配置</li>
-</ol>
-<h3 id="hexo的安装和配置及其使用进入管理员cmd运行"><a href="#hexo的安装和配置及其使用进入管理员cmd运行" class="headerlink" title="hexo的安装和配置及其使用进入管理员cmd运行"></a>hexo的安装和配置及其使用<em>进入管理员cmd运行</em></h3><ol>
-<li>安装hexo<ul>
-<li>cnpm install -g hexo-cli 安装hexo</li>
-<li>hexo v 验证版本</li>
-</ul>
-</li>
-<li>进入blog目录初始化hexo<ul>
-<li>hexo init 出现start blogging with hexo即为成功</li>
-</ul>
-</li>
-<li>hexo s 启动博客</li>
-</ol>
-<p>命令行使用</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chdir #查看当前目录</span><br><span class="line">e: #进入e盘</span><br><span class="line">md cs #新建文件夹cs</span><br><span class="line">cd cs #进入文件夹cs</span><br><span class="line">dir -w 查看文件下有什么文件</span><br><span class="line">cd .. 返回上级目录</span><br><span class="line">cd ../.. 返回两级目录</span><br></pre></td></tr></table></figure>
-<p><img src="/rubbish/cs.htm/2023-12-14/MYfsYYtjAfHMSyyl.png" alt="输入图片说明"></p>
-<p>1、使用”Win+r“快捷键并输入“cmd”打开控制台</p>
-<p>2、输入“d:”进入d盘</p>
-<p>3、输入“cd  Program Files”进入“Program Files”文件夹内（可使用tab键补全文件夹名字）</p>
-<p>4、输入“cd  MVTec”进入“MVTec”文件夹内（可使用tab键补全文件夹名字）cd 访问下一级目录</p>
-<p>md 新建文件夹<br>dir 列表文件 dir &#x2F;w</p>
-<p>markdown 语法<br>markdown 编辑器Obsidian</p>
-<p>遇到的问题<br>初始化使用科学上网<br>下载git node.js 需要安装并且配置正确</p>
-<p>cd ..&#x2F;..退回两层目录</p>
-<p>cnpm install hexo-deployer-git –save<br>#hexo 在windows下部署git插件<br>e:\blog&gt;cnpm install hexo-deployer-git –save</p>
-<p>Initialized empty Git repository</p>
-<p>E:\blog&gt;start themes打开文件themes</p>
-<p>hexo更新<br><a href="https://blog.csdn.net/qq_33154343/article/details/108301374">https://blog.csdn.net/qq_33154343/article/details/108301374</a><br>注意 更新时在需在更新包的目录下使用命令进行更新<br><img src="/rubbish/cs.htm/2023-12-14/ESPCjXunOIp0ISZm.png" alt="输入图片说明"></p>
+<p>思路<br>接触服务器<br>搭建服务器加个人博客<br>方案 阿里云服务器加wrodpress<br>了解个人博客<br>选各大博客框架中选择了hexo，博主说hexo的网上教程很多<br>选择hexo博客主题<br>hexo-butterfly的配置</p>
+<p>配置hexo配置遇到了许许多多的问题，涉及许多linux的命令（基础过Linux系统但是对命令行的使用一无所知），以至于我在配置的过程中，感叹到，这好像不是我可以做到的，感觉在挑战自己的极限，在拉高自己的极限，想过很多次放弃，但是想到都做到这一步了，还是继续做下去吧，于是经过一两天的熬夜耕耘，解决了hexo的配置</p>
+<p>解决问题 <em>详见我的个人博客</em></p>
+<p>既然搭建好了</p>
+<p>主题<br>一星期时间的配置，一个人从网上解决各种问题，从放弃到继续，从低谷到山顶，从茫然到豁然开朗，有时候如果遇到难以解决的问题可以适当的停下来，在茫然的时候，这边个人建议哪里迷茫就退回到上一步从头开始，想清楚自己要解决的是什么问题。<br>到了配置主题部分，我做了一个很错误的事情，在解决问题的时候由于教程过多，经常在各个教程之间徘徊，很急躁，我像一只无头苍蝇一样找出口，过于迷茫，就在那时存档，静下心来好好看一个教程，在某一个教程中看见官方技术文档永远是最好的文档，至此我开始看官方文档，虽然自己有很多看教程和解决问题的经验，但是看技术文档的事情还是第一次，一方面是因为文档太长，另一方面是因为过于急躁，急于求成，看了好几遍文档我开始慢慢的了解文档的思路，有了顺序有了方向，官方技术文档就是一个方向，不到一天解决了很多问题再结合各大同类型的博客，参照他们的GitHub仓库文档在和自己的对比，慢慢的解决了很多问题，至此我的个人博客完美搭建完毕。</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>留言</title>
-    <url>/messageboard/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/rubbish/hello-world.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
   </entry>
   <entry>
     <title>cs2</title>
@@ -426,6 +336,11 @@
     <content><![CDATA[<p>clash</p>
 <p>gpt</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>留言</title>
+    <url>/messageboard/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title></title>
@@ -500,6 +415,97 @@
 <p>Initialized empty Git repository</p>
 <p>E:\blog&gt;start themes打开文件themes</p>
 <p>hexo更新<br><a href="https://blog.csdn.net/qq_33154343/article/details/108301374">https://blog.csdn.net/qq_33154343/article/details/108301374</a><br>注意 更新时在需在更新包的目录下使用命令进行更新<br><img src="/rubbish/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99.htm/2023-12-14/ESPCjXunOIp0ISZm.png" alt="输入图片说明"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/rubbish/hello-world.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>cs</title>
+    <url>/rubbish/cs.html</url>
+    <content><![CDATA[<h1 id="记录一下个人第一次建站的教程"><a href="#记录一下个人第一次建站的教程" class="headerlink" title="记录一下个人第一次建站的教程"></a>记录一下个人第一次建站的教程</h1><h4 id="视频参考codesheep-up主的视频"><a href="#视频参考codesheep-up主的视频" class="headerlink" title="视频参考codesheep up主的视频"></a>视频参考codesheep up主的视频</h4><h4 id="使用win10版本"><a href="#使用win10版本" class="headerlink" title="使用win10版本"></a>使用win10版本</h4><h2 id="建站原理"><a href="#建站原理" class="headerlink" title="建站原理"></a>建站原理</h2><ol>
+<li>使用hexo加github代码托管平台进行建站</li>
+<li>通过阿里云域名解析至代码托管平台</li>
+</ol>
+<h2 id="下面开始实行"><a href="#下面开始实行" class="headerlink" title="下面开始实行"></a>下面开始实行</h2><h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h3><h5 id="教程参考Node-js下载安装及环境配置教程【超详细】-nodejs下载-CSDN博客"><a href="#教程参考Node-js下载安装及环境配置教程【超详细】-nodejs下载-CSDN博客" class="headerlink" title="教程参考Node.js下载安装及环境配置教程【超详细】_nodejs下载-CSDN博客"></a>教程参考<a href="https://blog.csdn.net/WHF__/article/details/129362462">Node.js下载安装及环境配置教程【超详细】_nodejs下载-CSDN博客</a></h5><ul>
+<li><p>注意点</p>
+</li>
+<li><p>安装完使用下列命令测试是否安装成功</p>
+<ul>
+<li><p>node -v &#x2F;&#x2F;显示node.js版本</p>
+</li>
+<li><p>npm -v &#x2F;&#x2F;显示npm版本</p>
+<p>![  (1)](..&#x2F;imgs&#x2F;cs&#x2F;  (1).png)</p>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>下面进行node.js的环境配置<br>在安装目录新建2个文件夹</li>
+</ol>
+<ul>
+<li>【node_global】</li>
+<li>【node_cahe】<br>创建完毕后使用管理员命令打开cmd依次输入以下两个命令</li>
+<li>npm config set prefix “文件所在路径\node_global”</li>
+<li>npm config set cache “文件所在路径\node_cache”</li>
+<li>无报错 运行成功</li>
+</ul>
+<ol start="2">
+<li>配置<strong>系统</strong>环境变量<br><img src="/rubbish/cs.htm/2023-12-14/FB7zQJ6ljZpjnsIl.png" alt="输入图片说明"><br><em>注意：变量值应是你node_modules的目录。</em><br><em>如果确定后没有新建node_modules文件夹，需在node_global下手动创建一个node_modules文件夹，再复制你创建的node_modules文件夹的路径地址到变量值</em></li>
+<li>配置<strong>用户</strong>变量中的path<br><img src="/rubbish/cs.htm/2023-12-14/de3QhymUI6icTqu6.png" alt="输入图片说明"></li>
+<li>测试是否安装成功</li>
+</ol>
+<h4 id="注意使用管理员运行"><a href="#注意使用管理员运行" class="headerlink" title="注意使用管理员运行"></a>注意使用管理员运行</h4><ul>
+<li>npm install express -g   &#x2F;&#x2F; -g代表全局安装</li>
+<li>出现以下界面为成功<img src="/rubbish/cs.htm/2023-12-14/sro49Qrf2laOUqME.png" alt="输入图片说明"></li>
+</ul>
+<ol start="5">
+<li>安装淘宝镜像</li>
+<li>安装cnpm <em>个人建议安装</em></li>
+<li>出现问题检查配置</li>
+</ol>
+<h3 id="hexo的安装和配置及其使用进入管理员cmd运行"><a href="#hexo的安装和配置及其使用进入管理员cmd运行" class="headerlink" title="hexo的安装和配置及其使用进入管理员cmd运行"></a>hexo的安装和配置及其使用<em>进入管理员cmd运行</em></h3><ol>
+<li>安装hexo<ul>
+<li>cnpm install -g hexo-cli 安装hexo</li>
+<li>hexo v 验证版本</li>
+</ul>
+</li>
+<li>进入blog目录初始化hexo<ul>
+<li>hexo init 出现start blogging with hexo即为成功</li>
+</ul>
+</li>
+<li>hexo s 启动博客</li>
+</ol>
+<p>命令行使用</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">chdir #查看当前目录</span><br><span class="line">e: #进入e盘</span><br><span class="line">md cs #新建文件夹cs</span><br><span class="line">cd cs #进入文件夹cs</span><br><span class="line">dir -w 查看文件下有什么文件</span><br><span class="line">cd .. 返回上级目录</span><br><span class="line">cd ../.. 返回两级目录</span><br></pre></td></tr></table></figure>
+<p><img src="/rubbish/cs.htm/2023-12-14/MYfsYYtjAfHMSyyl.png" alt="输入图片说明"></p>
+<p>1、使用”Win+r“快捷键并输入“cmd”打开控制台</p>
+<p>2、输入“d:”进入d盘</p>
+<p>3、输入“cd  Program Files”进入“Program Files”文件夹内（可使用tab键补全文件夹名字）</p>
+<p>4、输入“cd  MVTec”进入“MVTec”文件夹内（可使用tab键补全文件夹名字）cd 访问下一级目录</p>
+<p>md 新建文件夹<br>dir 列表文件 dir &#x2F;w</p>
+<p>markdown 语法<br>markdown 编辑器Obsidian</p>
+<p>遇到的问题<br>初始化使用科学上网<br>下载git node.js 需要安装并且配置正确</p>
+<p>cd ..&#x2F;..退回两层目录</p>
+<p>cnpm install hexo-deployer-git –save<br>#hexo 在windows下部署git插件<br>e:\blog&gt;cnpm install hexo-deployer-git –save</p>
+<p>Initialized empty Git repository</p>
+<p>E:\blog&gt;start themes打开文件themes</p>
+<p>hexo更新<br><a href="https://blog.csdn.net/qq_33154343/article/details/108301374">https://blog.csdn.net/qq_33154343/article/details/108301374</a><br>注意 更新时在需在更新包的目录下使用命令进行更新<br><img src="/rubbish/cs.htm/2023-12-14/ESPCjXunOIp0ISZm.png" alt="输入图片说明"></p>
 ]]></content>
   </entry>
   <entry>
