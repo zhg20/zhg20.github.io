@@ -3,7 +3,7 @@
   <entry>
     <title>关于本地编辑</title>
     <url>/2023/12/15/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%9C%B0%E7%BC%96%E8%BE%91/</url>
-    <content><![CDATA[<h3 id="Hexo-butterfly-自定义文章封面-主页顶部图片更改"><a href="#Hexo-butterfly-自定义文章封面-主页顶部图片更改" class="headerlink" title="Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改"></a>Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改</h3><p><em>问题来源：在给文章加封面后，实际网页中文章也买你顶部也出现了封面图片</em></p>
+    <content><![CDATA[<h3 id="Hexo-butterfly-自定义文章封面-主页顶部图片更改"><a href="#Hexo-butterfly-自定义文章封面-主页顶部图片更改" class="headerlink" title="Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改"></a>Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改</h3><p><em>问题来源：在给文章加封面后，实际网页中文章顶部也出现了封面图片</em></p>
 <ol>
 <li>再主页中显示文章封面但是再文章页面不显示封面 <em>参考：<a href="https://blog.csdn.net/qq_43857095/article/details/108306164">https://blog.csdn.net/qq_43857095/article/details/108306164</a></em><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: cs1</span><br><span class="line">date: 2023-12-15 20:11:21</span><br><span class="line">tags: 测试</span><br><span class="line">top_img: false # 文章顶部图不显示</span><br><span class="line">cover: https://b.zhutix.com/bizhi/yuan-shu/08.jpg # 显示封面</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
 <li>隐藏文章 <em>参考：<a href="https://www.cnblogs.com/yangstar/articles/16690342.html#:~:text=%E5%AE%89%E8%A3%85%20%E5%9C%A8%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%A7%E8%A1%8C%20npm,install%20hexo-hide-posts%20--save">https://www.cnblogs.com/yangstar/articles/16690342.html#:~:text=%E5%AE%89%E8%A3%85%20%E5%9C%A8%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%A7%E8%A1%8C%20npm,install%20hexo-hide-posts%20--save</a></em><br>需要安装hexo插件<code>npm install hexo-hide-posts --save</code><br>配置_config.yml<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># hexo-hide-posts</span><br><span class="line">hide_posts:</span><br><span class="line">  # 可以改成其他你喜欢的名字</span><br><span class="line">  filter: hidden  #隐藏文件</span><br><span class="line">  # 指定你想要传递隐藏文章的位置，比如让所有隐藏文章在存档页面可见</span><br><span class="line">  # 常见的位置有：index, tag, category, archive, sitemap, feed, etc.</span><br><span class="line">  # 留空则默认全部隐藏</span><br><span class="line">  public_generators: []</span><br><span class="line">  # 为隐藏的文章添加 noindex meta 标签，阻止搜索引擎收录</span><br><span class="line">  noindex: true</span><br></pre></td></tr></table></figure>
@@ -16,6 +16,7 @@
 <li>一个文章加多个tags<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tags:</span><br><span class="line">  - 123</span><br><span class="line">  - 456</span><br><span class="line">tags: [123, 456]</span><br></pre></td></tr></table></figure>
 多标签写法，这2种都是一样的效果，用哪个都可以</li>
 <li>冷知识 使用hexo查看本地访问量数目回不对，上传后正确</li>
+<li>一个文章加多个categories<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 这是默认的写法，给文章添加一个分类。</span><br><span class="line">categories: 123</span><br><span class="line"># 这会将文章分类123/456子分类目录下。</span><br><span class="line">categories: [123, 456]</span><br><span class="line">这会将文章分类到123/456子分类目录下。</span><br><span class="line">categories:</span><br><span class="line">   - 123</span><br><span class="line">   - 456</span><br><span class="line">多标签写法，文章被分类到123、456以及123的自分类789这3个分类下面，官方指定写法。</span><br><span class="line">categories:</span><br><span class="line">   - [123]</span><br><span class="line">   - [456]</span><br><span class="line">   - [123, 789]</span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
       <tags>
@@ -209,19 +210,41 @@
       </tags>
   </entry>
   <entry>
-    <title>随笔（持续更新）</title>
-    <url>/2023/12/17/%E9%9A%8F%E7%AC%94%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/</url>
-    <content><![CDATA[<h3 id="不骄不躁-步步前行"><a href="#不骄不躁-步步前行" class="headerlink" title="不骄不躁 步步前行"></a>不骄不躁 步步前行</h3><ul>
-<li>前些日子突然间接触服务器，想到了我能不能在网站上搭建一个个人网站，想来想去不知道做什么网站最后想到搭建一个个人博客，在各大搜索平台了解了很多关于搭建个人博客，一开始的也没有想很多就是东西，比如说博客是由框架的还是说通过html网页语言编写，后来了解到有了框架，那就只需要配置框架，就认为这是一个很简单的事情（看教程都写的步骤的很短）所有没有开始执行，结果一一开始想到的时word press搭建，但是看到它的框架不太喜欢，于是</li>
-</ul>
-<p>思路<br>接触服务器<br>搭建服务器加个人博客<br>方案 阿里云服务器加wrodpress<br>了解个人博客<br>选各大博客框架中选择了hexo，博主说hexo的网上教程很多<br>选择hexo博客主题<br>hexo-butterfly的配置</p>
-<p>配置hexo配置遇到了许许多多的问题，涉及许多linux的命令（基础过Linux系统但是对命令行的使用一无所知），以至于我在配置的过程中，感叹到，这好像不是我可以做到的，感觉在挑战自己的极限，在拉高自己的极限，想过很多次放弃，但是想到都做到这一步了，还是继续做下去吧，于是经过一两天的熬夜耕耘，解决了hexo的配置</p>
-<p>解决问题 <em>详见我的个人博客</em></p>
-<p>既然搭建好了</p>
-<p>主题<br>一星期时间的配置，一个人从网上解决各种问题，从放弃到继续，从低谷到山顶，从茫然到豁然开朗，有时候如果遇到难以解决的问题可以适当的停下来，在茫然的时候，这边个人建议哪里迷茫就退回到上一步从头开始，想清楚自己要解决的是什么问题。<br>到了配置主题部分，我做了一个很错误的事情，在解决问题的时候由于教程过多，经常在各个教程之间徘徊，很急躁，我像一只无头苍蝇一样找出口，过于迷茫，就在那时存档，静下心来好好看一个教程，在某一个教程中看见官方技术文档永远是最好的文档，至此我开始看官方文档，虽然自己有很多看教程和解决问题的经验，但是看技术文档的事情还是第一次，一方面是因为文档太长，另一方面是因为过于急躁，急于求成，看了好几遍文档我开始慢慢的了解文档的思路，有了顺序有了方向，官方技术文档就是一个方向，不到一天解决了很多问题再结合各大同类型的博客，参照他们的GitHub仓库文档在和自己的对比，慢慢的解决了很多问题，至此我的个人博客完美搭建完毕。</p>
+    <title>摄影12月19日</title>
+    <url>/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/</url>
+    <content><![CDATA[<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(4).jpg" alt="  (4)"></p>
+<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(1).jpg" alt="  (1)"></p>
+<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(2).jpg" alt="  (2)"></p>
+<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(3).jpg" alt="  (3)"></p>
 ]]></content>
       <tags>
-        <tag>随笔</tag>
+        <tag>摄影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>摄影记录12月17</title>
+    <url>/2023/12/15/%E6%91%84%E5%BD%B1%E8%AE%B0%E5%BD%9512%E6%9C%8817/</url>
+    <content><![CDATA[<h2 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h2><p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(5).png" alt="  (5)"></p>
+<center>第一次用大光圈拍虚化，玉兰花很好看</center>
+
+<p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(11).png" alt="  (11)"></p>
+<center>路灯的达利园效应</center>
+
+<p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(12).png" alt="  (12)"></p>
+<center>手动对焦拍灯，虚化朦胧感</center>
+
+<p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(7).png" alt="  (7)"></p>
+<center>晚霞</center>
+
+<p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(17).png" alt="  (17)"></p>
+<center>玉兰花开</center>
+
+<p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(13).png" alt="  (13)"></p>
+<center>夜晚的街景</center>
+
+]]></content>
+      <tags>
+        <tag>摄影</tag>
       </tags>
   </entry>
   <entry>
@@ -338,58 +361,10 @@
       </tags>
   </entry>
   <entry>
-    <title>摄影记录（持续更新）</title>
-    <url>/2023/12/15/%E6%91%84%E5%BD%B1%E8%AE%B0%E5%BD%95%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/</url>
-    <content><![CDATA[<h2 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h2><p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(5).png" alt="  (5)"></p>
-<center>第一次用大光圈拍虚化，玉兰花很好看</center>
-
-<p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(11).png" alt="  (11)"></p>
-<center>路灯的达利园效应</center>
-
-<p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(12).png" alt="  (12)"></p>
-<center>手动对焦拍灯，虚化朦胧感</center>
-
-<p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(7).png" alt="  (7)"></p>
-<center>晚霞</center>
-
-<p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(17).png" alt="  (17)"></p>
-<center>玉兰花开</center>
-
-<p><img src="https://cdn.jsdelivr.net/gh/zhg20/blogimage@main/img/%20%20(13).png" alt="  (13)"></p>
-<center>夜晚的街景</center>]]></content>
-      <tags>
-        <tag>摄影</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>标签</title>
     <url>/categories/index.html</url>
     <content><![CDATA[<p>clash</p>
 <p>gpt</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/rubbish/hello-world.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>cs2</title>
-    <url>/rubbish/cs2.html</url>
-    <content><![CDATA[<p><img src="/rubbish/cs2.htm/(1).png" alt="(1)"></p>
 ]]></content>
   </entry>
   <entry>
@@ -463,6 +438,30 @@
 <p>Initialized empty Git repository</p>
 <p>E:\blog&gt;start themes打开文件themes</p>
 <p>hexo更新<br><a href="https://blog.csdn.net/qq_33154343/article/details/108301374">https://blog.csdn.net/qq_33154343/article/details/108301374</a><br>注意 更新时在需在更新包的目录下使用命令进行更新<br><img src="/rubbish/cs.htm/2023-12-14/ESPCjXunOIp0ISZm.png" alt="输入图片说明"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>cs2</title>
+    <url>/rubbish/cs2.html</url>
+    <content><![CDATA[<p><img src="/rubbish/cs2.htm/(1).png" alt="(1)"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/rubbish/hello-world.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -552,13 +551,13 @@
 ]]></content>
   </entry>
   <entry>
-    <title>留言</title>
-    <url>/messageboard/index.html</url>
+    <title>标签</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
+    <title>留言</title>
+    <url>/messageboard/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
