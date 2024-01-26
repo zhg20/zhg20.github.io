@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>临时写点东西</title>
+    <url>/2024/01/10/%E4%B8%B4%E6%97%B6%E5%86%99%E7%82%B9%E4%B8%9C%E8%A5%BF/</url>
+    <content><![CDATA[<p>###想法<br>通过pulsoid进行心率显示<br>手机端下载软件<br>电脑端是一个网页<br><a href="https://pulsoid.net/widget/view/6db7c189-87af-47ba-b70f-aef3fb10f5f3">https://pulsoid.net/widget/view/6db7c189-87af-47ba-b70f-aef3fb10f5f3</a></p>
+<h3 id="关于注册谷歌账号时遇到的问题"><a href="#关于注册谷歌账号时遇到的问题" class="headerlink" title="关于注册谷歌账号时遇到的问题"></a>关于注册谷歌账号时遇到的问题</h3><p><strong>省流:在谷歌浏览器中只留下英语,重启浏览器进行谷歌账号注册</strong></p>
+<ol>
+<li>填写手机号码时出现’此电话号码无法用于进行验证’</li>
+</ol>
+<ul>
+<li><a href="https://iyuantiao.me/wp-content/uploads/2021/08/3-8-1-1.png">https://iyuantiao.me/wp-content/uploads/2021/08/3-8-1-1.png</a></li>
+</ul>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ol>
+<li>下载谷歌浏览器</li>
+<li>登录和不登录都可以</li>
+<li>在浏览器语言中只留下’英语 美国’</li>
+<li>按提示进行注册</li>
+</ol>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ol>
+<li>邮箱优先选用163或者qq</li>
+<li>有Gmail用Gmail</li>
+<li>科学上网</li>
+</ol>
+<h3 id="使用金山excel自动签到阿里云盘"><a href="#使用金山excel自动签到阿里云盘" class="headerlink" title="使用金山excel自动签到阿里云盘"></a>使用金山excel自动签到阿里云盘</h3><ol>
+<li>获取excel <em>【金山文档】 阿里云每日签到<br><a href="https://www.kdocs.cn/l/ceSY5hHGs5S4">https://www.kdocs.cn/l/ceSY5hHGs5S4</a></em></li>
+<li>获取refresh_token</li>
+</ol>
+<ul>
+<li>进入阿里云盘官网登陆后</li>
+<li>按F12，选择应用程序，（找到<a href="https://www.aliyundrive.com)/">https://www.aliyundrive.com）</a> 阿里云盘存储，在密钥中选择token，在下行找到refresh_token，复制引号内的字符串</li>
+<li><img src="/2024/01/10/%E4%B8%B4%E6%97%B6%E5%86%99%E7%82%B9%E4%B8%9C%E8%A5%BF/%7BD3A61F3E-269A-491A-AC1B-CC9F835D0B27%7D.png" alt="{D3A61F3E-269A-491A-AC1B-CC9F835D0B27}"></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于本地编辑</title>
+    <url>/2023/12/15/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%9C%B0%E7%BC%96%E8%BE%91/</url>
+    <content><![CDATA[<h3 id="Hexo-butterfly-自定义文章封面-主页顶部图片更改"><a href="#Hexo-butterfly-自定义文章封面-主页顶部图片更改" class="headerlink" title="Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改"></a>Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改</h3><p><em>问题来源：在给文章加封面后，实际网页中文章顶部也出现了封面图片</em></p>
+<ol>
+<li>再主页中显示文章封面但是再文章页面不显示封面 <em>参考：<a href="https://blog.csdn.net/qq_43857095/article/details/108306164">https://blog.csdn.net/qq_43857095/article/details/108306164</a></em><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: cs1</span><br><span class="line">date: 2023-12-15 20:11:21</span><br><span class="line">tags: 测试</span><br><span class="line">top_img: false # 文章顶部图不显示</span><br><span class="line">cover: https://b.zhutix.com/bizhi/yuan-shu/08.jpg # 显示封面</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
+<li>隐藏文章 <em>参考：<a href="https://www.cnblogs.com/yangstar/articles/16690342.html#:~:text=%E5%AE%89%E8%A3%85%20%E5%9C%A8%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%A7%E8%A1%8C%20npm,install%20hexo-hide-posts%20--save">https://www.cnblogs.com/yangstar/articles/16690342.html#:~:text=%E5%AE%89%E8%A3%85%20%E5%9C%A8%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%A7%E8%A1%8C%20npm,install%20hexo-hide-posts%20--save</a></em><br>需要安装hexo插件<code>npm install hexo-hide-posts --save</code><br>配置_config.yml<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># hexo-hide-posts</span><br><span class="line">hide_posts:</span><br><span class="line">  # 可以改成其他你喜欢的名字</span><br><span class="line">  filter: hidden  #隐藏文件</span><br><span class="line">  # 指定你想要传递隐藏文章的位置，比如让所有隐藏文章在存档页面可见</span><br><span class="line">  # 常见的位置有：index, tag, category, archive, sitemap, feed, etc.</span><br><span class="line">  # 留空则默认全部隐藏</span><br><span class="line">  public_generators: []</span><br><span class="line">  # 为隐藏的文章添加 noindex meta 标签，阻止搜索引擎收录</span><br><span class="line">  noindex: true</span><br></pre></td></tr></table></figure>
+设置 filter: secret 之后，你就可以在 front-matter 中使用 secret: true 来隐藏文章了。<br>使用<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#hidden: true # 文章的md文件头部加入此代码</span><br><span class="line">#如下</span><br><span class="line">---</span><br><span class="line">title: cs1</span><br><span class="line">date: 2023-12-15 20:11:21</span><br><span class="line">tags: 测试</span><br><span class="line">top_img: false # 文章顶部图不显示</span><br><span class="line">cover: https://b.zhutix.com/bizhi/yuan-shu/08.jpg # 显示封面</span><br><span class="line">hidden: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li>你可以在命令行运行 hexo hidden:list 来获取当前所有的已隐藏文章列表。</li>
+</ul>
+<ol start="3">
+<li>一个文章加多个tags<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tags:</span><br><span class="line">  - 123</span><br><span class="line">  - 456</span><br><span class="line">tags: [123, 456]</span><br></pre></td></tr></table></figure>
+多标签写法，这2种都是一样的效果，用哪个都可以</li>
+<li>冷知识 使用hexo查看本地访问量数目回不对，上传后正确</li>
+<li>一个文章加多个categories<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 这是默认的写法，给文章添加一个分类。</span><br><span class="line">categories: 123</span><br><span class="line"># 这会将文章分类123/456子分类目录下。</span><br><span class="line">categories: [123, 456]</span><br><span class="line">这会将文章分类到123/456子分类目录下。</span><br><span class="line">categories:</span><br><span class="line">   - 123</span><br><span class="line">   - 456</span><br><span class="line">多标签写法，文章被分类到123、456以及123的自分类789这3个分类下面，官方指定写法。</span><br><span class="line">categories:</span><br><span class="line">   - [123]</span><br><span class="line">   - [456]</span><br><span class="line">   - [123, 789]</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="在Typora中的图片设置"><a href="#在Typora中的图片设置" class="headerlink" title="在Typora中的图片设置"></a>在Typora中的图片设置</h3><p><em>由于本博客搭建在服务器上，所以图像文件上传至服务器而不使用图床</em></p>
+<ol>
+<li>根据多次尝试有以下方案</li>
+</ol>
+<ul>
+<li>上传至GitHub作为图床，再使用picgo与本地typora连接，缺点就是访问太慢需要VPN。<em>设置的时候有问题，按网上教程配置好之后，有问题可以尝试一下将图床设置改为设为默认设置</em></li>
+<li>使用其他图床，需付费，访问速度快但是要付费，长期发展不合适。</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>个人博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>将本地hexo迁移至阿里云轻量应用服务器</title>
     <url>/2023/12/17/%E5%B0%86%E6%9C%AC%E5%9C%B0hexo%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
     <content><![CDATA[<p><em>在root环境下</em></p>
@@ -28,41 +92,6 @@
       <tags>
         <tag>个人博客</tag>
         <tag>轻量应用服务器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于本地编辑</title>
-    <url>/2023/12/15/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%9C%B0%E7%BC%96%E8%BE%91/</url>
-    <content><![CDATA[<h3 id="Hexo-butterfly-自定义文章封面-主页顶部图片更改"><a href="#Hexo-butterfly-自定义文章封面-主页顶部图片更改" class="headerlink" title="Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改"></a>Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改</h3><p><em>问题来源：在给文章加封面后，实际网页中文章顶部也出现了封面图片</em></p>
-<ol>
-<li>再主页中显示文章封面但是再文章页面不显示封面 <em>参考：<a href="https://blog.csdn.net/qq_43857095/article/details/108306164">https://blog.csdn.net/qq_43857095/article/details/108306164</a></em><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: cs1</span><br><span class="line">date: 2023-12-15 20:11:21</span><br><span class="line">tags: 测试</span><br><span class="line">top_img: false # 文章顶部图不显示</span><br><span class="line">cover: https://b.zhutix.com/bizhi/yuan-shu/08.jpg # 显示封面</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
-<li>隐藏文章 <em>参考：<a href="https://www.cnblogs.com/yangstar/articles/16690342.html#:~:text=%E5%AE%89%E8%A3%85%20%E5%9C%A8%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%A7%E8%A1%8C%20npm,install%20hexo-hide-posts%20--save">https://www.cnblogs.com/yangstar/articles/16690342.html#:~:text=%E5%AE%89%E8%A3%85%20%E5%9C%A8%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%A7%E8%A1%8C%20npm,install%20hexo-hide-posts%20--save</a></em><br>需要安装hexo插件<code>npm install hexo-hide-posts --save</code><br>配置_config.yml<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># hexo-hide-posts</span><br><span class="line">hide_posts:</span><br><span class="line">  # 可以改成其他你喜欢的名字</span><br><span class="line">  filter: hidden  #隐藏文件</span><br><span class="line">  # 指定你想要传递隐藏文章的位置，比如让所有隐藏文章在存档页面可见</span><br><span class="line">  # 常见的位置有：index, tag, category, archive, sitemap, feed, etc.</span><br><span class="line">  # 留空则默认全部隐藏</span><br><span class="line">  public_generators: []</span><br><span class="line">  # 为隐藏的文章添加 noindex meta 标签，阻止搜索引擎收录</span><br><span class="line">  noindex: true</span><br></pre></td></tr></table></figure>
-设置 filter: secret 之后，你就可以在 front-matter 中使用 secret: true 来隐藏文章了。<br>使用<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#hidden: true # 文章的md文件头部加入此代码</span><br><span class="line">#如下</span><br><span class="line">---</span><br><span class="line">title: cs1</span><br><span class="line">date: 2023-12-15 20:11:21</span><br><span class="line">tags: 测试</span><br><span class="line">top_img: false # 文章顶部图不显示</span><br><span class="line">cover: https://b.zhutix.com/bizhi/yuan-shu/08.jpg # 显示封面</span><br><span class="line">hidden: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li>你可以在命令行运行 hexo hidden:list 来获取当前所有的已隐藏文章列表。</li>
-</ul>
-<ol start="3">
-<li>一个文章加多个tags<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tags:</span><br><span class="line">  - 123</span><br><span class="line">  - 456</span><br><span class="line">tags: [123, 456]</span><br></pre></td></tr></table></figure>
-多标签写法，这2种都是一样的效果，用哪个都可以</li>
-<li>冷知识 使用hexo查看本地访问量数目回不对，上传后正确</li>
-<li>一个文章加多个categories<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 这是默认的写法，给文章添加一个分类。</span><br><span class="line">categories: 123</span><br><span class="line"># 这会将文章分类123/456子分类目录下。</span><br><span class="line">categories: [123, 456]</span><br><span class="line">这会将文章分类到123/456子分类目录下。</span><br><span class="line">categories:</span><br><span class="line">   - 123</span><br><span class="line">   - 456</span><br><span class="line">多标签写法，文章被分类到123、456以及123的自分类789这3个分类下面，官方指定写法。</span><br><span class="line">categories:</span><br><span class="line">   - [123]</span><br><span class="line">   - [456]</span><br><span class="line">   - [123, 789]</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <tags>
-        <tag>个人博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>摄影12月19日</title>
-    <url>/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/</url>
-    <content><![CDATA[<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(4).jpg" alt="  (4)"></p>
-<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(1).jpg" alt="  (1)"></p>
-<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(2).jpg" alt="  (2)"></p>
-<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(3).jpg" alt="  (3)"></p>
-]]></content>
-      <tags>
-        <tag>摄影</tag>
       </tags>
   </entry>
   <entry>
@@ -222,32 +251,15 @@
       </tags>
   </entry>
   <entry>
-    <title>解决UG和Abaqus安装后的共存问题</title>
-    <url>/2023/12/25/%E8%A7%A3%E5%86%B3UG%E5%92%8CAbaqus%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E5%85%B1%E5%AD%98%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p><strong>安装2个软件后，先安装的软件的许可证不可用</strong><br><em>注释： 软件版本UG12.0 Abaqus CAE 2020</em></p>
-<ol>
-<li>根据各个软件附带的教程进行安装</li>
-<li>下面开始介绍原理</li>
-</ol>
-<ul>
-<li>UG和CAE都是西门子的软件，许可证可以通用，因此我们只需要CAE的许可证文件下增加一条UG 的许可证文件。<strong>注意：增加文件并不代表许可证安装，所以我们需要重新刷新一下许可证</strong></li>
-</ul>
-<ol start="3">
-<li>开始实施</li>
-</ol>
-<ul>
-<li>将C:\NX6-NX12License_Servers\Vendors里面的SiemensPLM复制到CAE的对应许可证文件（C:\SolidSQUAD_License_Servers\Vendors）中</li>
-<li>管理员运行卸载（uninstall）原来的许可文件然后再次刷新文件目录（C:\SolidSQUAD_License_Servers）<em>有必要时需要重启</em> </li>
-<li>再次进行管理员install</li>
-<li>出现以下即为成功</li>
-</ul>
-<p><img src="/2023/12/25/%E8%A7%A3%E5%86%B3UG%E5%92%8CAbaqus%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E5%85%B1%E5%AD%98%E9%97%AE%E9%A2%98/1.png" alt="1"></p>
-<ul>
-<li>如果没有出现图片内容可以多次进行卸载安装许可证</li>
-</ul>
+    <title>摄影12月19日</title>
+    <url>/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/</url>
+    <content><![CDATA[<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(4).jpg" alt="  (4)"></p>
+<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(1).jpg" alt="  (1)"></p>
+<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(2).jpg" alt="  (2)"></p>
+<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(3).jpg" alt="  (3)"></p>
 ]]></content>
       <tags>
-        <tag>软件安装</tag>
+        <tag>摄影</tag>
       </tags>
   </entry>
   <entry>
@@ -372,9 +384,45 @@
       </tags>
   </entry>
   <entry>
+    <title>解决UG和Abaqus安装后的共存问题</title>
+    <url>/2023/12/25/%E8%A7%A3%E5%86%B3UG%E5%92%8CAbaqus%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E5%85%B1%E5%AD%98%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p><strong>安装2个软件后，先安装的软件的许可证不可用</strong><br><em>注释： 软件版本UG12.0 Abaqus CAE 2020</em></p>
+<ol>
+<li>根据各个软件附带的教程进行安装</li>
+<li>下面开始介绍原理</li>
+</ol>
+<ul>
+<li>UG和CAE都是西门子的软件，许可证可以通用，因此我们只需要CAE的许可证文件下增加一条UG 的许可证文件。<strong>注意：增加文件并不代表许可证安装，所以我们需要重新刷新一下许可证</strong></li>
+</ul>
+<ol start="3">
+<li>开始实施</li>
+</ol>
+<ul>
+<li>将C:\NX6-NX12License_Servers\Vendors里面的SiemensPLM复制到CAE的对应许可证文件（C:\SolidSQUAD_License_Servers\Vendors）中</li>
+<li>管理员运行卸载（uninstall）原来的许可文件然后再次刷新文件目录（C:\SolidSQUAD_License_Servers）<em>有必要时需要重启</em> </li>
+<li>再次进行管理员install</li>
+<li>出现以下即为成功</li>
+</ul>
+<p><img src="/2023/12/25/%E8%A7%A3%E5%86%B3UG%E5%92%8CAbaqus%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E5%85%B1%E5%AD%98%E9%97%AE%E9%A2%98/1.png" alt="1"></p>
+<ul>
+<li>如果没有出现图片内容可以多次进行卸载安装许可证</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>软件安装</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>留言</title>
     <url>/messageboard/index.html</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[<p>clash</p>
+<p>gpt</p>
+]]></content>
   </entry>
   <entry>
     <title>cs</title>
@@ -447,42 +495,6 @@
 <p>Initialized empty Git repository</p>
 <p>E:\blog&gt;start themes打开文件themes</p>
 <p>hexo更新<br><a href="https://blog.csdn.net/qq_33154343/article/details/108301374">https://blog.csdn.net/qq_33154343/article/details/108301374</a><br>注意 更新时在需在更新包的目录下使用命令进行更新<br><img src="/rubbish/cs.htm/2023-12-14/ESPCjXunOIp0ISZm.png" alt="输入图片说明"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[<p>clash</p>
-<p>gpt</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>我的第一篇博客文章</title>
-    <url>/rubbish/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0.html</url>
-    <content><![CDATA[<p>##标题1</p>
-<p>内容</p>
-<p>s<br>s</p>
-<p>##标题2</p>
-<p>以下开始测试</p>
-<p>#一级标题<br>##二级标题<br>###三级标题<br><strong>粗体</strong><br><em>斜体</em><br><em><strong>斜粗体</strong></em></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/rubbish/hello-world.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -561,9 +573,38 @@
 ]]></content>
   </entry>
   <entry>
+    <title>我的第一篇博客文章</title>
+    <url>/rubbish/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0.html</url>
+    <content><![CDATA[<p>##标题1</p>
+<p>内容</p>
+<p>s<br>s</p>
+<p>##标题2</p>
+<p>以下开始测试</p>
+<p>#一级标题<br>##二级标题<br>###三级标题<br><strong>粗体</strong><br><em>斜体</em><br><em><strong>斜粗体</strong></em></p>
+]]></content>
+  </entry>
+  <entry>
     <title>标签</title>
     <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/rubbish/hello-world.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
   <entry>
     <title>cs2</title>
