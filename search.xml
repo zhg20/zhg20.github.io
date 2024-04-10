@@ -33,20 +33,6 @@
       </tags>
   </entry>
   <entry>
-    <title>STM32学习笔记</title>
-    <url>/2024/03/09/STM32%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="STM32F103C8T6"><a href="#STM32F103C8T6" class="headerlink" title="STM32F103C8T6"></a>STM32F103C8T6</h2><h3 id="安装好软件"><a href="#安装好软件" class="headerlink" title="安装好软件"></a>安装好软件</h3><p>留坑</p>
-<h3 id="编译所遇到的问题"><a href="#编译所遇到的问题" class="headerlink" title="编译所遇到的问题"></a>编译所遇到的问题</h3><ol>
-<li>ST-LINK的解决<br>我的问题解决是由debug，关闭st-link里面的enable解决</li>
-<li>在编译过程中选择vision5编译器</li>
-<li></li>
-</ol>
-]]></content>
-      <tags>
-        <tag>STM32</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>UG数车编程</title>
     <url>/2024/03/26/UG%E6%95%B0%E8%BD%A6%E7%BC%96%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="UG数车编程技术"><a href="#UG数车编程技术" class="headerlink" title="UG数车编程技术"></a>UG数车编程技术</h1><p><em>由于学校作业要手动编车床程序，考虑到未来的智能化还有本身就像学UG编程的原因（其实是我懒是(～￣▽￣)～），我开始这个UG编程的学习</em></p>
@@ -85,66 +71,18 @@
       </tags>
   </entry>
   <entry>
-    <title>临时写点东西</title>
-    <url>/2024/01/10/%E4%B8%B4%E6%97%B6%E5%86%99%E7%82%B9%E4%B8%9C%E8%A5%BF/</url>
-    <content><![CDATA[<h3 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h3><p>通过pulsoid进行心率显示<br>手机端下载软件<br>电脑端是一个网页<br><a href="https://pulsoid.net/widget/view/6db7c189-87af-47ba-b70f-aef3fb10f5f3">https://pulsoid.net/widget/view/6db7c189-87af-47ba-b70f-aef3fb10f5f3</a></p>
-<h3 id="关于注册谷歌账号时遇到的问题"><a href="#关于注册谷歌账号时遇到的问题" class="headerlink" title="关于注册谷歌账号时遇到的问题"></a>关于注册谷歌账号时遇到的问题</h3><p><strong>省流:在谷歌浏览器中只留下英语,重启浏览器进行谷歌账号注册</strong></p>
-<ol>
-<li>填写手机号码时出现’此电话号码无法用于进行验证’</li>
+    <title>STM32学习笔记</title>
+    <url>/2024/03/09/STM32%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="STM32F103C8T6"><a href="#STM32F103C8T6" class="headerlink" title="STM32F103C8T6"></a>STM32F103C8T6</h2><h3 id="安装好软件"><a href="#安装好软件" class="headerlink" title="安装好软件"></a>安装好软件</h3><p>留坑</p>
+<h3 id="编译所遇到的问题"><a href="#编译所遇到的问题" class="headerlink" title="编译所遇到的问题"></a>编译所遇到的问题</h3><ol>
+<li>ST-LINK的解决<br>我的问题解决是由debug，关闭st-link里面的enable解决</li>
+<li>在编译过程中选择vision5编译器</li>
+<li>中文输入问题</li>
+<li>程序末行需要留空</li>
 </ol>
-<ul>
-<li><a href="https://iyuantiao.me/wp-content/uploads/2021/08/3-8-1-1.png">https://iyuantiao.me/wp-content/uploads/2021/08/3-8-1-1.png</a></li>
-</ul>
-<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ol>
-<li>下载谷歌浏览器</li>
-<li>登录和不登录都可以</li>
-<li>在浏览器语言中只留下’英语 美国’</li>
-<li>按提示进行注册</li>
-</ol>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ol>
-<li>邮箱优先选用163或者qq</li>
-<li>有Gmail用Gmail</li>
-<li>科学上网</li>
-</ol>
-<h3 id="使用金山excel自动签到阿里云盘"><a href="#使用金山excel自动签到阿里云盘" class="headerlink" title="使用金山excel自动签到阿里云盘"></a>使用金山excel自动签到阿里云盘</h3><ol>
-<li>获取excel <em>【金山文档】 阿里云每日签到<br><a href="https://www.kdocs.cn/l/ceSY5hHGs5S4">https://www.kdocs.cn/l/ceSY5hHGs5S4</a></em></li>
-<li>获取refresh_token</li>
-</ol>
-<ul>
-<li>进入阿里云盘官网登陆后</li>
-<li>按F12，选择应用程序，（找到<a href="https://www.aliyundrive.com)/">https://www.aliyundrive.com）</a> 阿里云盘存储，在密钥中选择token，在下行找到refresh_token，复制引号内的字符串</li>
-<li><img src="/2024/01/10/%E4%B8%B4%E6%97%B6%E5%86%99%E7%82%B9%E4%B8%9C%E8%A5%BF/%7BD3A61F3E-269A-491A-AC1B-CC9F835D0B27%7D.png" alt="{D3A61F3E-269A-491A-AC1B-CC9F835D0B27}"></li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>将本地hexo迁移至阿里云轻量应用服务器</title>
-    <url>/2023/12/17/%E5%B0%86%E6%9C%AC%E5%9C%B0hexo%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
-    <content><![CDATA[<p><em>在root环境下</em></p>
-<ol>
-<li>配置服务器80端口<em>参照<a href="https://blog.csdn.net/CLOUD_J/article/details/104697089">https://blog.csdn.net/CLOUD_J/article/details/104697089</a></em></li>
-<li>安装nginx</li>
-</ol>
-<ul>
-<li>使用命令行<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yum insatll -y nginx</span><br><span class="line">启动服务器：</span><br><span class="line">systemctl start nginx</span><br><span class="line">systemctl enable nginx</span><br><span class="line">出现create...</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol start="3">
-<li>补充：远程连接自己服务器<em>参考：<a href="https://blog.csdn.net/qq_42249896/article/details/85200327">https://blog.csdn.net/qq_42249896/article/details/85200327</a></em></li>
-<li>linux命令<em>参考菜鸟教程：<a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></em></li>
-</ol>
-<ul>
-<li>不保存退出命令为：:q!<br>5.查看ssh公钥 <em>参考：<a href="https://blog.csdn.net/qq_36631580/article/details/123530578">https://blog.csdn.net/qq_36631580/article/details/123530578</a></em></li>
-<li>本机存在ssh key<br>在安装Git前提下，打开Git Bash Here<br>输入 cd ~&#x2F;.ssh 进入到.ssh 文件夹</li>
-</ul>
-<p>输入 ls 查看.ssh 文件夹里面的文件，有 【id_rsa】【 id_rsa.pub】 known_hosts ，ssh秘钥就在 id_rsa.pub文件里</p>
-<p>id_rsa是私钥，不能泄露出去<br>id_rsa.pub是公钥，可以放心地告诉任何人<br>输入cat id_rsa.pu，直接复制ssh秘钥即可</p>
-<p>若需要找秘钥文件路径的话，输入pwd，就可以看到路径了</p>
-<p>【windows】Git中添加密钥、ssh密钥的创建与查看（打开id_rsa.pub文件）<br>参考<em><a href="https://blog.csdn.net/qq_41539778/article/details/109114980#:~:text=2%E3%80%81%E6%9F%A5%E7%9C%8B%E5%AF%86%E9%92%A5%201%EF%BC%89%E5%9C%A8%E5%88%9A%E6%89%8DC%E7%9B%98%E5%88%9B%E5%BB%BAssh%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E6%89%BE%E5%88%B0.s%20sh%E6%96%87%E4%BB%B6%20%EF%BC%8C.ssh%E4%B8%AD%E6%9C%89%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E3%80%90id_rsa.pub%E3%80%91%2C%E5%88%9B%E5%BB%BA%E7%9A%84%E5%AF%86%E9%92%A5%E5%B0%B1%E5%82%A8%E5%AD%98%E5%9C%A8%E8%BF%99%E9%87%8C%EF%BC%8C%E4%BD%86%E6%98%AF%E4%B8%8D%E8%83%BD%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80%EF%BC%8C,2%EF%BC%89%E7%94%A8windows%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%EF%BC%8C%E8%BF%9B%E5%85%A5.ssh%20%E4%B8%AD%E7%9A%84%203%EF%BC%89%E7%94%A8%E5%91%BD%E4%BB%A4%E3%80%90more%20id_rsa.pub%E3%80%91%E8%8E%B7%E5%8F%96%E5%86%85%E5%AE%B9%EF%BC%8C%E4%B8%8B%E9%9D%A2%E8%BF%99%E4%B8%B2%E5%B0%B1%E6%98%AF%E4%BD%A0%E7%9A%84%E5%AF%86%E9%92%A5%EF%BC%88%E5%8F%AF%E4%BB%A5%E5%A4%8D%E5%88%B6%E4%B8%8B%E6%9D%A5%EF%BC%89%E3%80%82">https://blog.csdn.net/qq_41539778/article/details/109114980#:~:text=2%E3%80%81%E6%9F%A5%E7%9C%8B%E5%AF%86%E9%92%A5%201%EF%BC%89%E5%9C%A8%E5%88%9A%E6%89%8DC%E7%9B%98%E5%88%9B%E5%BB%BAssh%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E6%89%BE%E5%88%B0.s%20sh%E6%96%87%E4%BB%B6%20%EF%BC%8C.ssh%E4%B8%AD%E6%9C%89%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E3%80%90id_rsa.pub%E3%80%91%2C%E5%88%9B%E5%BB%BA%E7%9A%84%E5%AF%86%E9%92%A5%E5%B0%B1%E5%82%A8%E5%AD%98%E5%9C%A8%E8%BF%99%E9%87%8C%EF%BC%8C%E4%BD%86%E6%98%AF%E4%B8%8D%E8%83%BD%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80%EF%BC%8C,2%EF%BC%89%E7%94%A8windows%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%EF%BC%8C%E8%BF%9B%E5%85%A5.ssh%20%E4%B8%AD%E7%9A%84%203%EF%BC%89%E7%94%A8%E5%91%BD%E4%BB%A4%E3%80%90more%20id_rsa.pub%E3%80%91%E8%8E%B7%E5%8F%96%E5%86%85%E5%AE%B9%EF%BC%8C%E4%B8%8B%E9%9D%A2%E8%BF%99%E4%B8%B2%E5%B0%B1%E6%98%AF%E4%BD%A0%E7%9A%84%E5%AF%86%E9%92%A5%EF%BC%88%E5%8F%AF%E4%BB%A5%E5%A4%8D%E5%88%B6%E4%B8%8B%E6%9D%A5%EF%BC%89%E3%80%82</a></em></p>
-<p>Windows系统如何查看本机ssh公钥？<br>参考：<em><a href="https://blog.csdn.net/qq_36631580/article/details/123530578">https://blog.csdn.net/qq_36631580/article/details/123530578</a></em></p>
 ]]></content>
       <tags>
-        <tag>个人博客</tag>
-        <tag>轻量应用服务器</tag>
+        <tag>STM32</tag>
       </tags>
   </entry>
   <entry>
@@ -176,6 +114,71 @@
 ]]></content>
       <tags>
         <tag>个人博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>临时写点东西</title>
+    <url>/2024/01/10/%E4%B8%B4%E6%97%B6%E5%86%99%E7%82%B9%E4%B8%9C%E8%A5%BF/</url>
+    <content><![CDATA[<h3 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h3><p>通过pulsoid进行心率显示<br>手机端下载软件<br>电脑端是一个网页<br><a href="https://pulsoid.net/widget/view/6db7c189-87af-47ba-b70f-aef3fb10f5f3">https://pulsoid.net/widget/view/6db7c189-87af-47ba-b70f-aef3fb10f5f3</a></p>
+<h3 id="关于注册谷歌账号时遇到的问题"><a href="#关于注册谷歌账号时遇到的问题" class="headerlink" title="关于注册谷歌账号时遇到的问题"></a>关于注册谷歌账号时遇到的问题</h3><p><strong>省流:在谷歌浏览器中只留下英语,重启浏览器进行谷歌账号注册</strong></p>
+<ol>
+<li>填写手机号码时出现’此电话号码无法用于进行验证’</li>
+</ol>
+<ul>
+<li><a href="https://iyuantiao.me/wp-content/uploads/2021/08/3-8-1-1.png">https://iyuantiao.me/wp-content/uploads/2021/08/3-8-1-1.png</a></li>
+</ul>
+<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><ol>
+<li>下载谷歌浏览器</li>
+<li>登录和不登录都可以</li>
+<li>在浏览器语言中只留下’英语 美国’</li>
+<li>按提示进行注册</li>
+</ol>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ol>
+<li>邮箱优先选用163或者qq</li>
+<li>有Gmail用Gmail</li>
+<li>科学上网</li>
+</ol>
+<h3 id="使用金山excel自动签到阿里云盘"><a href="#使用金山excel自动签到阿里云盘" class="headerlink" title="使用金山excel自动签到阿里云盘"></a>使用金山excel自动签到阿里云盘</h3><ol>
+<li>获取excel <em>【金山文档】 阿里云每日签到<br><a href="https://www.kdocs.cn/l/ceSY5hHGs5S4">https://www.kdocs.cn/l/ceSY5hHGs5S4</a></em></li>
+<li>获取refresh_token</li>
+</ol>
+<ul>
+<li>进入阿里云盘官网登陆后</li>
+<li>按F12，选择应用程序，（找到<a href="https://www.aliyundrive.com)/">https://www.aliyundrive.com）</a> 阿里云盘存储，在密钥中选择token，在下行找到refresh_token，复制引号内的字符串</li>
+<li><img src="/2024/01/10/%E4%B8%B4%E6%97%B6%E5%86%99%E7%82%B9%E4%B8%9C%E8%A5%BF/%7BD3A61F3E-269A-491A-AC1B-CC9F835D0B27%7D.png" alt="{D3A61F3E-269A-491A-AC1B-CC9F835D0B27}"></li>
+</ul>
+<h3 id="使用npm安装pnpm"><a href="#使用npm安装pnpm" class="headerlink" title="使用npm安装pnpm"></a>使用npm安装pnpm</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br><span class="line"></span><br><span class="line">e:\xuexitong\chaoxing-sign-cli&gt;winget install pnpm pnpm.pnpm</span><br><span class="line">找到多个与输入条件匹配的程序包。请修改输入。</span><br><span class="line">名称 ID                源</span><br><span class="line">-----------------------------</span><br><span class="line">pnpm pnpm.pnpm.preview winget</span><br><span class="line">pnpm pnpm.pnpm         winget</span><br><span class="line">已找到多个程序包: pnpm</span><br><span class="line">解决 (选择对应id即可)</span><br><span class="line">e:\xuexitong\chaoxing-sign-cli&gt;winget install pnpm.pnpm</span><br><span class="line">已找到 pnpm [pnpm.pnpm] 版本 8.15.6</span><br><span class="line">此应用程序由其所有者授权给你。</span><br><span class="line">Microsoft 对第三方程序包概不负责，也不向第三方程序包授予任何许可证。</span><br><span class="line">正在下载 https://github.com/pnpm/pnpm/releases/download/v8.15.6/pnpm-win-x64.exe</span><br><span class="line">  ██████████████████████████████  47.9 MB / 47.9 MB</span><br><span class="line">已成功验证安装程序哈希</span><br><span class="line">正在启动程序包安装...</span><br><span class="line">添加了命令行别名： &quot;pnpm&quot;</span><br><span class="line">已修改路径环境变量；重启 shell 以使用新值。</span><br><span class="line">已成功安装</span><br></pre></td></tr></table></figure>
+<p>pnpm官方文档<br><em><a href="https://pnpm.io/zh/installation">https://pnpm.io/zh/installation</a></em></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>大学生网课快速学习指南</title>
+    <url>/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<h2 id="使用油猴脚本进行网课快速学习（刷课）"><a href="#使用油猴脚本进行网课快速学习（刷课）" class="headerlink" title="使用油猴脚本进行网课快速学习（刷课）"></a>使用油猴脚本进行网课快速学习（刷课）</h2><p><em>刷课，老生常谈的问题了，但是还是有些大学生不会哈（至少我身边的还有些不会），所以就写了这一篇教程来帮助各位大学生</em></p>
+<h3 id="如何安装油猴脚本"><a href="#如何安装油猴脚本" class="headerlink" title="如何安装油猴脚本"></a>如何安装油猴脚本</h3><p><em>以Windows自带的Edge浏览器示例</em></p>
+<ol>
+<li><p>找到扩展并且点击<br><img src="/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/2.png" alt="2"></p>
+</li>
+<li><p>点击**<a href="https://microsoftedge.microsoft.com/addons?hl=zh-CN">获取 Microsoft Edge 扩展</a>**</p>
+<p><img src="/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/3.png" alt="3"></p>
+</li>
+<li><p>搜索<strong>篡改猴</strong><br><img src="/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/4.png" alt="4"></p>
+</li>
+<li><p>选择第二个绿色背景</p>
+<p><img src="/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/5.png" alt="5"></p>
+</li>
+<li><p>无脑安装即可</p>
+</li>
+</ol>
+<h3 id="如何寻找刷课插件"><a href="#如何寻找刷课插件" class="headerlink" title="如何寻找刷课插件"></a>如何寻找刷课插件</h3><ol>
+<li>进入网址<em><a href="https://greasyfork.org/zh-CN">https://greasyfork.org/zh-CN</a></em></li>
+<li>在搜索框里输入<em>chaoxing.com</em></li>
+<li>选择其中一个安装即可</li>
+<li>关闭浏览器重新进入学习通刷课网站</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>油猴脚本</tag>
       </tags>
   </entry>
   <entry>
@@ -211,6 +214,36 @@
 ]]></content>
       <tags>
         <tag>HarmonyOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>将本地hexo迁移至阿里云轻量应用服务器</title>
+    <url>/2023/12/17/%E5%B0%86%E6%9C%AC%E5%9C%B0hexo%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+    <content><![CDATA[<p><em>在root环境下</em></p>
+<ol>
+<li>配置服务器80端口<em>参照<a href="https://blog.csdn.net/CLOUD_J/article/details/104697089">https://blog.csdn.net/CLOUD_J/article/details/104697089</a></em></li>
+<li>安装nginx</li>
+</ol>
+<ul>
+<li>使用命令行<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yum insatll -y nginx</span><br><span class="line">启动服务器：</span><br><span class="line">systemctl start nginx</span><br><span class="line">systemctl enable nginx</span><br><span class="line">出现create...</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="3">
+<li>补充：远程连接自己服务器<em>参考：<a href="https://blog.csdn.net/qq_42249896/article/details/85200327">https://blog.csdn.net/qq_42249896/article/details/85200327</a></em></li>
+<li>linux命令<em>参考菜鸟教程：<a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></em></li>
+</ol>
+<ul>
+<li>不保存退出命令为：:q!<br>5.查看ssh公钥 <em>参考：<a href="https://blog.csdn.net/qq_36631580/article/details/123530578">https://blog.csdn.net/qq_36631580/article/details/123530578</a></em></li>
+<li>本机存在ssh key<br>在安装Git前提下，打开Git Bash Here<br>输入 cd ~&#x2F;.ssh 进入到.ssh 文件夹</li>
+</ul>
+<p>输入 ls 查看.ssh 文件夹里面的文件，有 【id_rsa】【 id_rsa.pub】 known_hosts ，ssh秘钥就在 id_rsa.pub文件里</p>
+<p>id_rsa是私钥，不能泄露出去<br>id_rsa.pub是公钥，可以放心地告诉任何人<br>输入cat id_rsa.pu，直接复制ssh秘钥即可</p>
+<p>若需要找秘钥文件路径的话，输入pwd，就可以看到路径了</p>
+<p>【windows】Git中添加密钥、ssh密钥的创建与查看（打开id_rsa.pub文件）<br>参考<em><a href="https://blog.csdn.net/qq_41539778/article/details/109114980#:~:text=2%E3%80%81%E6%9F%A5%E7%9C%8B%E5%AF%86%E9%92%A5%201%EF%BC%89%E5%9C%A8%E5%88%9A%E6%89%8DC%E7%9B%98%E5%88%9B%E5%BB%BAssh%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E6%89%BE%E5%88%B0.s%20sh%E6%96%87%E4%BB%B6%20%EF%BC%8C.ssh%E4%B8%AD%E6%9C%89%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E3%80%90id_rsa.pub%E3%80%91%2C%E5%88%9B%E5%BB%BA%E7%9A%84%E5%AF%86%E9%92%A5%E5%B0%B1%E5%82%A8%E5%AD%98%E5%9C%A8%E8%BF%99%E9%87%8C%EF%BC%8C%E4%BD%86%E6%98%AF%E4%B8%8D%E8%83%BD%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80%EF%BC%8C,2%EF%BC%89%E7%94%A8windows%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%EF%BC%8C%E8%BF%9B%E5%85%A5.ssh%20%E4%B8%AD%E7%9A%84%203%EF%BC%89%E7%94%A8%E5%91%BD%E4%BB%A4%E3%80%90more%20id_rsa.pub%E3%80%91%E8%8E%B7%E5%8F%96%E5%86%85%E5%AE%B9%EF%BC%8C%E4%B8%8B%E9%9D%A2%E8%BF%99%E4%B8%B2%E5%B0%B1%E6%98%AF%E4%BD%A0%E7%9A%84%E5%AF%86%E9%92%A5%EF%BC%88%E5%8F%AF%E4%BB%A5%E5%A4%8D%E5%88%B6%E4%B8%8B%E6%9D%A5%EF%BC%89%E3%80%82">https://blog.csdn.net/qq_41539778/article/details/109114980#:~:text=2%E3%80%81%E6%9F%A5%E7%9C%8B%E5%AF%86%E9%92%A5%201%EF%BC%89%E5%9C%A8%E5%88%9A%E6%89%8DC%E7%9B%98%E5%88%9B%E5%BB%BAssh%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E6%89%BE%E5%88%B0.s%20sh%E6%96%87%E4%BB%B6%20%EF%BC%8C.ssh%E4%B8%AD%E6%9C%89%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E3%80%90id_rsa.pub%E3%80%91%2C%E5%88%9B%E5%BB%BA%E7%9A%84%E5%AF%86%E9%92%A5%E5%B0%B1%E5%82%A8%E5%AD%98%E5%9C%A8%E8%BF%99%E9%87%8C%EF%BC%8C%E4%BD%86%E6%98%AF%E4%B8%8D%E8%83%BD%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80%EF%BC%8C,2%EF%BC%89%E7%94%A8windows%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%EF%BC%8C%E8%BF%9B%E5%85%A5.ssh%20%E4%B8%AD%E7%9A%84%203%EF%BC%89%E7%94%A8%E5%91%BD%E4%BB%A4%E3%80%90more%20id_rsa.pub%E3%80%91%E8%8E%B7%E5%8F%96%E5%86%85%E5%AE%B9%EF%BC%8C%E4%B8%8B%E9%9D%A2%E8%BF%99%E4%B8%B2%E5%B0%B1%E6%98%AF%E4%BD%A0%E7%9A%84%E5%AF%86%E9%92%A5%EF%BC%88%E5%8F%AF%E4%BB%A5%E5%A4%8D%E5%88%B6%E4%B8%8B%E6%9D%A5%EF%BC%89%E3%80%82</a></em></p>
+<p>Windows系统如何查看本机ssh公钥？<br>参考：<em><a href="https://blog.csdn.net/qq_36631580/article/details/123530578">https://blog.csdn.net/qq_36631580/article/details/123530578</a></em></p>
+]]></content>
+      <tags>
+        <tag>个人博客</tag>
+        <tag>轻量应用服务器</tag>
       </tags>
   </entry>
   <entry>
@@ -370,18 +403,6 @@
       </tags>
   </entry>
   <entry>
-    <title>摄影12月19日</title>
-    <url>/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/</url>
-    <content><![CDATA[<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(4).jpg" alt="  (4)"></p>
-<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(1).jpg" alt="  (1)"></p>
-<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(2).jpg" alt="  (2)"></p>
-<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(3).jpg" alt="  (3)"></p>
-]]></content>
-      <tags>
-        <tag>摄影</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>更新ssl证书</title>
     <url>/2024/03/22/%E6%9B%B4%E6%96%B0ssl%E8%AF%81%E4%B9%A6/</url>
     <content><![CDATA[<h2 id="更新SSL安全证书"><a href="#更新SSL安全证书" class="headerlink" title="更新SSL安全证书"></a>更新SSL安全证书</h2><p><em>作为一个新手小白终于迎来了搭建博客后难以避免的问题：更新SSL安全证书</em></p>
@@ -400,6 +421,47 @@
 <li>访问个人网站成功</li>
 </ol>
 ]]></content>
+  </entry>
+  <entry>
+    <title>摄影12月19日</title>
+    <url>/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/</url>
+    <content><![CDATA[<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(4).jpg" alt="  (4)"></p>
+<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(1).jpg" alt="  (1)"></p>
+<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(2).jpg" alt="  (2)"></p>
+<p><img src="/2023/12/19/%E6%91%84%E5%BD%B112%E6%9C%8819%E6%97%A5/%20%20(3).jpg" alt="  (3)"></p>
+]]></content>
+      <tags>
+        <tag>摄影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决UG和Abaqus安装后的共存问题</title>
+    <url>/2023/12/25/%E8%A7%A3%E5%86%B3UG%E5%92%8CAbaqus%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E5%85%B1%E5%AD%98%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p><strong>安装2个软件后，先安装的软件的许可证不可用</strong><br><em>注释： 软件版本UG12.0 Abaqus CAE 2020</em></p>
+<ol>
+<li>根据各个软件附带的教程进行安装</li>
+<li>下面开始介绍原理</li>
+</ol>
+<ul>
+<li>UG和CAE都是西门子的软件，许可证可以通用，因此我们只需要CAE的许可证文件下增加一条UG 的许可证文件。<strong>注意：增加文件并不代表许可证安装，所以我们需要重新刷新一下许可证</strong></li>
+</ul>
+<ol start="3">
+<li>开始实施</li>
+</ol>
+<ul>
+<li>将C:\NX6-NX12License_Servers\Vendors里面的SiemensPLM复制到CAE的对应许可证文件（C:\SolidSQUAD_License_Servers\Vendors）中</li>
+<li>管理员运行卸载（uninstall）原来的许可文件然后再次刷新文件目录（C:\SolidSQUAD_License_Servers）<em>有必要时需要重启</em> </li>
+<li>再次进行管理员install</li>
+<li>出现以下即为成功</li>
+</ul>
+<p><img src="/2023/12/25/%E8%A7%A3%E5%86%B3UG%E5%92%8CAbaqus%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E5%85%B1%E5%AD%98%E9%97%AE%E9%A2%98/1.png" alt="1"></p>
+<ul>
+<li>如果没有出现图片内容可以多次进行卸载安装许可证</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>软件安装</tag>
+      </tags>
   </entry>
   <entry>
     <title>服务器</title>
@@ -524,35 +586,6 @@
       </tags>
   </entry>
   <entry>
-    <title>解决UG和Abaqus安装后的共存问题</title>
-    <url>/2023/12/25/%E8%A7%A3%E5%86%B3UG%E5%92%8CAbaqus%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E5%85%B1%E5%AD%98%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p><strong>安装2个软件后，先安装的软件的许可证不可用</strong><br><em>注释： 软件版本UG12.0 Abaqus CAE 2020</em></p>
-<ol>
-<li>根据各个软件附带的教程进行安装</li>
-<li>下面开始介绍原理</li>
-</ol>
-<ul>
-<li>UG和CAE都是西门子的软件，许可证可以通用，因此我们只需要CAE的许可证文件下增加一条UG 的许可证文件。<strong>注意：增加文件并不代表许可证安装，所以我们需要重新刷新一下许可证</strong></li>
-</ul>
-<ol start="3">
-<li>开始实施</li>
-</ol>
-<ul>
-<li>将C:\NX6-NX12License_Servers\Vendors里面的SiemensPLM复制到CAE的对应许可证文件（C:\SolidSQUAD_License_Servers\Vendors）中</li>
-<li>管理员运行卸载（uninstall）原来的许可文件然后再次刷新文件目录（C:\SolidSQUAD_License_Servers）<em>有必要时需要重启</em> </li>
-<li>再次进行管理员install</li>
-<li>出现以下即为成功</li>
-</ul>
-<p><img src="/2023/12/25/%E8%A7%A3%E5%86%B3UG%E5%92%8CAbaqus%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E5%85%B1%E5%AD%98%E9%97%AE%E9%A2%98/1.png" alt="1"></p>
-<ul>
-<li>如果没有出现图片内容可以多次进行卸载安装许可证</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>软件安装</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>标签</title>
     <url>/categories/index.html</url>
     <content><![CDATA[<p>clash</p>
@@ -560,9 +593,10 @@
 ]]></content>
   </entry>
   <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
+    <title>cs2</title>
+    <url>/rubbish/cs2.html</url>
+    <content><![CDATA[<p><img src="/rubbish/cs2.htm/(1).png" alt="(1)"></p>
+]]></content>
   </entry>
   <entry>
     <title>留言</title>
@@ -570,28 +604,9 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/rubbish/hello-world.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>cs2</title>
-    <url>/rubbish/cs2.html</url>
-    <content><![CDATA[<p><img src="/rubbish/cs2.htm/(1).png" alt="(1)"></p>
-]]></content>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>cs</title>
@@ -664,6 +679,24 @@
 <p>Initialized empty Git repository</p>
 <p>E:\blog&gt;start themes打开文件themes</p>
 <p>hexo更新<br><a href="https://blog.csdn.net/qq_33154343/article/details/108301374">https://blog.csdn.net/qq_33154343/article/details/108301374</a><br>注意 更新时在需在更新包的目录下使用命令进行更新<br><img src="/rubbish/cs.htm/2023-12-14/ESPCjXunOIp0ISZm.png" alt="输入图片说明"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/rubbish/hello-world.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
   <entry>
