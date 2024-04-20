@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>MDK5</title>
+    <url>/2024/03/04/MDK5/</url>
+    <content><![CDATA[<h1 id="如何安装-Keil-MDK5"><a href="#如何安装-Keil-MDK5" class="headerlink" title="如何安装 Keil MDK5"></a>如何安装 Keil MDK5</h1><p><strong>这段时间由于对 STM32 感兴趣，需要用到对应的软件Keil MDK5，下面是我所遇到的问题以及解决方法</strong></p>
+<h2 id="前往Keil官方网站进行软件下载"><a href="#前往Keil官方网站进行软件下载" class="headerlink" title="前往Keil官方网站进行软件下载"></a>前往Keil官方网站进行软件下载</h2><p>官网下载地址：<a href="https://www.keil.arm.com/">https://www.keil.arm.com/</a><br>点击CMSIS Packs 进行下载</p>
+<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><h3 id="软件激活"><a href="#软件激活" class="headerlink" title="软件激活"></a>软件激活</h3><ol>
+<li>安装好软件后需要进行激活</li>
+<li>需要<em>管理员</em>打开软件</li>
+<li>进入软件选择File——Licance Management</li>
+<li>复制ID号</li>
+<li><em>管理员</em>打开注册机软件keygen</li>
+<li>粘贴ID号，选择ARM，点击Generate按钮，得到注册号并复制</li>
+<li>出现successfully为成功</li>
+</ol>
+<h3 id="对应单片机的packs安装"><a href="#对应单片机的packs安装" class="headerlink" title="对应单片机的packs安装"></a>对应单片机的packs安装</h3><p><strong>由于本人在keil md5中下载失败出现一些问题，这里介绍的是通过去官网下载，能使用科学上网就科学上网</strong></p>
+<ol>
+<li>进入官网 *官网pack包下载链接：<a href="https://www.keil.com/dd2/pack/">https://www.keil.com/dd2/pack/</a> *</li>
+<li>直接搜索你的单片机型号</li>
+<li>进入CMSIS Pack，进行download</li>
+<li>下载后双击安装</li>
+</ol>
+<h3 id="安装packs后魔术棒点击不了"><a href="#安装packs后魔术棒点击不了" class="headerlink" title="安装packs后魔术棒点击不了"></a>安装packs后魔术棒点击不了</h3><ol>
+<li>原因之一可能是你没有进行加载工程文件</li>
+</ol>
+<ul>
+<li>打开Keil5,点击Project–&gt;Open Project 选择要转的Keil4工程，打开后点击“确定”</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>STM32</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>STM32学习笔记</title>
     <url>/2024/03/09/STM32%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="STM32F103C8T6"><a href="#STM32F103C8T6" class="headerlink" title="STM32F103C8T6"></a>STM32F103C8T6</h2><h3 id="安装好软件"><a href="#安装好软件" class="headerlink" title="安装好软件"></a>安装好软件</h3><p>留坑</p>
@@ -54,35 +86,64 @@
       </tags>
   </entry>
   <entry>
-    <title>MDK5</title>
-    <url>/2024/03/04/MDK5/</url>
-    <content><![CDATA[<h1 id="如何安装-Keil-MDK5"><a href="#如何安装-Keil-MDK5" class="headerlink" title="如何安装 Keil MDK5"></a>如何安装 Keil MDK5</h1><p><strong>这段时间由于对 STM32 感兴趣，需要用到对应的软件Keil MDK5，下面是我所遇到的问题以及解决方法</strong></p>
-<h2 id="前往Keil官方网站进行软件下载"><a href="#前往Keil官方网站进行软件下载" class="headerlink" title="前往Keil官方网站进行软件下载"></a>前往Keil官方网站进行软件下载</h2><p>官网下载地址：<a href="https://www.keil.arm.com/">https://www.keil.arm.com/</a><br>点击CMSIS Packs 进行下载</p>
-<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><h3 id="软件激活"><a href="#软件激活" class="headerlink" title="软件激活"></a>软件激活</h3><ol>
-<li>安装好软件后需要进行激活</li>
-<li>需要<em>管理员</em>打开软件</li>
-<li>进入软件选择File——Licance Management</li>
-<li>复制ID号</li>
-<li><em>管理员</em>打开注册机软件keygen</li>
-<li>粘贴ID号，选择ARM，点击Generate按钮，得到注册号并复制</li>
-<li>出现successfully为成功</li>
-</ol>
-<h3 id="对应单片机的packs安装"><a href="#对应单片机的packs安装" class="headerlink" title="对应单片机的packs安装"></a>对应单片机的packs安装</h3><p><strong>由于本人在keil md5中下载失败出现一些问题，这里介绍的是通过去官网下载，能使用科学上网就科学上网</strong></p>
+    <title>关于本地编辑</title>
+    <url>/2023/12/15/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%9C%B0%E7%BC%96%E8%BE%91/</url>
+    <content><![CDATA[<h3 id="Hexo-butterfly-自定义文章封面-主页顶部图片更改"><a href="#Hexo-butterfly-自定义文章封面-主页顶部图片更改" class="headerlink" title="Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改"></a>Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改</h3><p><em>问题来源：在给文章加封面后，实际网页中文章顶部也出现了封面图片</em></p>
 <ol>
-<li>进入官网 *官网pack包下载链接：<a href="https://www.keil.com/dd2/pack/">https://www.keil.com/dd2/pack/</a> *</li>
-<li>直接搜索你的单片机型号</li>
-<li>进入CMSIS Pack，进行download</li>
-<li>下载后双击安装</li>
-</ol>
-<h3 id="安装packs后魔术棒点击不了"><a href="#安装packs后魔术棒点击不了" class="headerlink" title="安装packs后魔术棒点击不了"></a>安装packs后魔术棒点击不了</h3><ol>
-<li>原因之一可能是你没有进行加载工程文件</li>
+<li>再主页中显示文章封面但是再文章页面不显示封面 <em>参考：<a href="https://blog.csdn.net/qq_43857095/article/details/108306164">https://blog.csdn.net/qq_43857095/article/details/108306164</a></em><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: cs1</span><br><span class="line">date: 2023-12-15 20:11:21</span><br><span class="line">tags: 测试</span><br><span class="line">top_img: false # 文章顶部图不显示</span><br><span class="line">cover: https://b.zhutix.com/bizhi/yuan-shu/08.jpg # 显示封面</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
+<li>隐藏文章 <em>参考：<a href="https://www.cnblogs.com/yangstar/articles/16690342.html#:~:text=%E5%AE%89%E8%A3%85%20%E5%9C%A8%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%A7%E8%A1%8C%20npm,install%20hexo-hide-posts%20--save">https://www.cnblogs.com/yangstar/articles/16690342.html#:~:text=%E5%AE%89%E8%A3%85%20%E5%9C%A8%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%A7%E8%A1%8C%20npm,install%20hexo-hide-posts%20--save</a></em><br>需要安装hexo插件<code>npm install hexo-hide-posts --save</code><br>配置_config.yml<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># hexo-hide-posts</span><br><span class="line">hide_posts:</span><br><span class="line">  # 可以改成其他你喜欢的名字</span><br><span class="line">  filter: hidden  #隐藏文件</span><br><span class="line">  # 指定你想要传递隐藏文章的位置，比如让所有隐藏文章在存档页面可见</span><br><span class="line">  # 常见的位置有：index, tag, category, archive, sitemap, feed, etc.</span><br><span class="line">  # 留空则默认全部隐藏</span><br><span class="line">  public_generators: []</span><br><span class="line">  # 为隐藏的文章添加 noindex meta 标签，阻止搜索引擎收录</span><br><span class="line">  noindex: true</span><br></pre></td></tr></table></figure>
+设置 filter: secret 之后，你就可以在 front-matter 中使用 secret: true 来隐藏文章了。<br>使用<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#hidden: true # 文章的md文件头部加入此代码</span><br><span class="line">#如下</span><br><span class="line">---</span><br><span class="line">title: cs1</span><br><span class="line">date: 2023-12-15 20:11:21</span><br><span class="line">tags: 测试</span><br><span class="line">top_img: false # 文章顶部图不显示</span><br><span class="line">cover: https://b.zhutix.com/bizhi/yuan-shu/08.jpg # 显示封面</span><br><span class="line">hidden: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
 </ol>
 <ul>
-<li>打开Keil5,点击Project–&gt;Open Project 选择要转的Keil4工程，打开后点击“确定”</li>
+<li>你可以在命令行运行 hexo hidden:list 来获取当前所有的已隐藏文章列表。</li>
+</ul>
+<ol start="3">
+<li>一个文章加多个tags<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tags:</span><br><span class="line">  - 123</span><br><span class="line">  - 456</span><br><span class="line">tags: [123, 456]</span><br></pre></td></tr></table></figure>
+多标签写法，这2种都是一样的效果，用哪个都可以</li>
+<li>冷知识 使用hexo查看本地访问量数目回不对，上传后正确</li>
+<li>一个文章加多个categories<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 这是默认的写法，给文章添加一个分类。</span><br><span class="line">categories: 123</span><br><span class="line"># 这会将文章分类123/456子分类目录下。</span><br><span class="line">categories: [123, 456]</span><br><span class="line">这会将文章分类到123/456子分类目录下。</span><br><span class="line">categories:</span><br><span class="line">   - 123</span><br><span class="line">   - 456</span><br><span class="line">多标签写法，文章被分类到123、456以及123的自分类789这3个分类下面，官方指定写法。</span><br><span class="line">categories:</span><br><span class="line">   - [123]</span><br><span class="line">   - [456]</span><br><span class="line">   - [123, 789]</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="在Typora中的图片设置"><a href="#在Typora中的图片设置" class="headerlink" title="在Typora中的图片设置"></a>在Typora中的图片设置</h3><p><em>由于本博客搭建在服务器上，所以图像文件上传至服务器而不使用图床</em></p>
+<ol>
+<li>根据多次尝试有以下方案</li>
+</ol>
+<ul>
+<li>上传至GitHub作为图床，再使用picgo与本地typora连接，缺点就是访问太慢需要VPN。<em>设置的时候有问题，按网上教程配置好之后，有问题可以尝试一下将图床设置改为设为默认设置</em></li>
+<li>使用其他图床，需付费，访问速度快但是要付费，长期发展不合适。</li>
 </ul>
 ]]></content>
       <tags>
-        <tag>STM32</tag>
+        <tag>个人博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>将本地hexo迁移至阿里云轻量应用服务器</title>
+    <url>/2023/12/17/%E5%B0%86%E6%9C%AC%E5%9C%B0hexo%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+    <content><![CDATA[<p><em>在root环境下</em></p>
+<ol>
+<li>配置服务器80端口<em>参照<a href="https://blog.csdn.net/CLOUD_J/article/details/104697089">https://blog.csdn.net/CLOUD_J/article/details/104697089</a></em></li>
+<li>安装nginx</li>
+</ol>
+<ul>
+<li>使用命令行<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yum insatll -y nginx</span><br><span class="line">启动服务器：</span><br><span class="line">systemctl start nginx</span><br><span class="line">systemctl enable nginx</span><br><span class="line">出现create...</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="3">
+<li>补充：远程连接自己服务器<em>参考：<a href="https://blog.csdn.net/qq_42249896/article/details/85200327">https://blog.csdn.net/qq_42249896/article/details/85200327</a></em></li>
+<li>linux命令<em>参考菜鸟教程：<a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></em></li>
+</ol>
+<ul>
+<li>不保存退出命令为：:q!<br>5.查看ssh公钥 <em>参考：<a href="https://blog.csdn.net/qq_36631580/article/details/123530578">https://blog.csdn.net/qq_36631580/article/details/123530578</a></em></li>
+<li>本机存在ssh key<br>在安装Git前提下，打开Git Bash Here<br>输入 cd ~&#x2F;.ssh 进入到.ssh 文件夹</li>
+</ul>
+<p>输入 ls 查看.ssh 文件夹里面的文件，有 【id_rsa】【 id_rsa.pub】 known_hosts ，ssh秘钥就在 id_rsa.pub文件里</p>
+<p>id_rsa是私钥，不能泄露出去<br>id_rsa.pub是公钥，可以放心地告诉任何人<br>输入cat id_rsa.pu，直接复制ssh秘钥即可</p>
+<p>若需要找秘钥文件路径的话，输入pwd，就可以看到路径了</p>
+<p>【windows】Git中添加密钥、ssh密钥的创建与查看（打开id_rsa.pub文件）<br>参考<em><a href="https://blog.csdn.net/qq_41539778/article/details/109114980#:~:text=2%E3%80%81%E6%9F%A5%E7%9C%8B%E5%AF%86%E9%92%A5%201%EF%BC%89%E5%9C%A8%E5%88%9A%E6%89%8DC%E7%9B%98%E5%88%9B%E5%BB%BAssh%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E6%89%BE%E5%88%B0.s%20sh%E6%96%87%E4%BB%B6%20%EF%BC%8C.ssh%E4%B8%AD%E6%9C%89%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E3%80%90id_rsa.pub%E3%80%91%2C%E5%88%9B%E5%BB%BA%E7%9A%84%E5%AF%86%E9%92%A5%E5%B0%B1%E5%82%A8%E5%AD%98%E5%9C%A8%E8%BF%99%E9%87%8C%EF%BC%8C%E4%BD%86%E6%98%AF%E4%B8%8D%E8%83%BD%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80%EF%BC%8C,2%EF%BC%89%E7%94%A8windows%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%EF%BC%8C%E8%BF%9B%E5%85%A5.ssh%20%E4%B8%AD%E7%9A%84%203%EF%BC%89%E7%94%A8%E5%91%BD%E4%BB%A4%E3%80%90more%20id_rsa.pub%E3%80%91%E8%8E%B7%E5%8F%96%E5%86%85%E5%AE%B9%EF%BC%8C%E4%B8%8B%E9%9D%A2%E8%BF%99%E4%B8%B2%E5%B0%B1%E6%98%AF%E4%BD%A0%E7%9A%84%E5%AF%86%E9%92%A5%EF%BC%88%E5%8F%AF%E4%BB%A5%E5%A4%8D%E5%88%B6%E4%B8%8B%E6%9D%A5%EF%BC%89%E3%80%82">https://blog.csdn.net/qq_41539778/article/details/109114980#:~:text=2%E3%80%81%E6%9F%A5%E7%9C%8B%E5%AF%86%E9%92%A5%201%EF%BC%89%E5%9C%A8%E5%88%9A%E6%89%8DC%E7%9B%98%E5%88%9B%E5%BB%BAssh%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E6%89%BE%E5%88%B0.s%20sh%E6%96%87%E4%BB%B6%20%EF%BC%8C.ssh%E4%B8%AD%E6%9C%89%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E3%80%90id_rsa.pub%E3%80%91%2C%E5%88%9B%E5%BB%BA%E7%9A%84%E5%AF%86%E9%92%A5%E5%B0%B1%E5%82%A8%E5%AD%98%E5%9C%A8%E8%BF%99%E9%87%8C%EF%BC%8C%E4%BD%86%E6%98%AF%E4%B8%8D%E8%83%BD%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80%EF%BC%8C,2%EF%BC%89%E7%94%A8windows%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%EF%BC%8C%E8%BF%9B%E5%85%A5.ssh%20%E4%B8%AD%E7%9A%84%203%EF%BC%89%E7%94%A8%E5%91%BD%E4%BB%A4%E3%80%90more%20id_rsa.pub%E3%80%91%E8%8E%B7%E5%8F%96%E5%86%85%E5%AE%B9%EF%BC%8C%E4%B8%8B%E9%9D%A2%E8%BF%99%E4%B8%B2%E5%B0%B1%E6%98%AF%E4%BD%A0%E7%9A%84%E5%AF%86%E9%92%A5%EF%BC%88%E5%8F%AF%E4%BB%A5%E5%A4%8D%E5%88%B6%E4%B8%8B%E6%9D%A5%EF%BC%89%E3%80%82</a></em></p>
+<p>Windows系统如何查看本机ssh公钥？<br>参考：<em><a href="https://blog.csdn.net/qq_36631580/article/details/123530578">https://blog.csdn.net/qq_36631580/article/details/123530578</a></em></p>
+]]></content>
+      <tags>
+        <tag>个人博客</tag>
+        <tag>轻量应用服务器</tag>
       </tags>
   </entry>
   <entry>
@@ -119,37 +180,6 @@
 <h3 id="使用npm安装pnpm"><a href="#使用npm安装pnpm" class="headerlink" title="使用npm安装pnpm"></a>使用npm安装pnpm</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g pnpm</span><br><span class="line"></span><br><span class="line">e:\xuexitong\chaoxing-sign-cli&gt;winget install pnpm pnpm.pnpm</span><br><span class="line">找到多个与输入条件匹配的程序包。请修改输入。</span><br><span class="line">名称 ID                源</span><br><span class="line">-----------------------------</span><br><span class="line">pnpm pnpm.pnpm.preview winget</span><br><span class="line">pnpm pnpm.pnpm         winget</span><br><span class="line">已找到多个程序包: pnpm</span><br><span class="line">解决 (选择对应id即可)</span><br><span class="line">e:\xuexitong\chaoxing-sign-cli&gt;winget install pnpm.pnpm</span><br><span class="line">已找到 pnpm [pnpm.pnpm] 版本 8.15.6</span><br><span class="line">此应用程序由其所有者授权给你。</span><br><span class="line">Microsoft 对第三方程序包概不负责，也不向第三方程序包授予任何许可证。</span><br><span class="line">正在下载 https://github.com/pnpm/pnpm/releases/download/v8.15.6/pnpm-win-x64.exe</span><br><span class="line">  ██████████████████████████████  47.9 MB / 47.9 MB</span><br><span class="line">已成功验证安装程序哈希</span><br><span class="line">正在启动程序包安装...</span><br><span class="line">添加了命令行别名： &quot;pnpm&quot;</span><br><span class="line">已修改路径环境变量；重启 shell 以使用新值。</span><br><span class="line">已成功安装</span><br></pre></td></tr></table></figure>
 <p>pnpm官方文档<br><em><a href="https://pnpm.io/zh/installation">https://pnpm.io/zh/installation</a></em></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>关于本地编辑</title>
-    <url>/2023/12/15/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%9C%B0%E7%BC%96%E8%BE%91/</url>
-    <content><![CDATA[<h3 id="Hexo-butterfly-自定义文章封面-主页顶部图片更改"><a href="#Hexo-butterfly-自定义文章封面-主页顶部图片更改" class="headerlink" title="Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改"></a>Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改</h3><p><em>问题来源：在给文章加封面后，实际网页中文章顶部也出现了封面图片</em></p>
-<ol>
-<li>再主页中显示文章封面但是再文章页面不显示封面 <em>参考：<a href="https://blog.csdn.net/qq_43857095/article/details/108306164">https://blog.csdn.net/qq_43857095/article/details/108306164</a></em><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: cs1</span><br><span class="line">date: 2023-12-15 20:11:21</span><br><span class="line">tags: 测试</span><br><span class="line">top_img: false # 文章顶部图不显示</span><br><span class="line">cover: https://b.zhutix.com/bizhi/yuan-shu/08.jpg # 显示封面</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
-<li>隐藏文章 <em>参考：<a href="https://www.cnblogs.com/yangstar/articles/16690342.html#:~:text=%E5%AE%89%E8%A3%85%20%E5%9C%A8%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%A7%E8%A1%8C%20npm,install%20hexo-hide-posts%20--save">https://www.cnblogs.com/yangstar/articles/16690342.html#:~:text=%E5%AE%89%E8%A3%85%20%E5%9C%A8%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%A7%E8%A1%8C%20npm,install%20hexo-hide-posts%20--save</a></em><br>需要安装hexo插件<code>npm install hexo-hide-posts --save</code><br>配置_config.yml<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># hexo-hide-posts</span><br><span class="line">hide_posts:</span><br><span class="line">  # 可以改成其他你喜欢的名字</span><br><span class="line">  filter: hidden  #隐藏文件</span><br><span class="line">  # 指定你想要传递隐藏文章的位置，比如让所有隐藏文章在存档页面可见</span><br><span class="line">  # 常见的位置有：index, tag, category, archive, sitemap, feed, etc.</span><br><span class="line">  # 留空则默认全部隐藏</span><br><span class="line">  public_generators: []</span><br><span class="line">  # 为隐藏的文章添加 noindex meta 标签，阻止搜索引擎收录</span><br><span class="line">  noindex: true</span><br></pre></td></tr></table></figure>
-设置 filter: secret 之后，你就可以在 front-matter 中使用 secret: true 来隐藏文章了。<br>使用<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#hidden: true # 文章的md文件头部加入此代码</span><br><span class="line">#如下</span><br><span class="line">---</span><br><span class="line">title: cs1</span><br><span class="line">date: 2023-12-15 20:11:21</span><br><span class="line">tags: 测试</span><br><span class="line">top_img: false # 文章顶部图不显示</span><br><span class="line">cover: https://b.zhutix.com/bizhi/yuan-shu/08.jpg # 显示封面</span><br><span class="line">hidden: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li>你可以在命令行运行 hexo hidden:list 来获取当前所有的已隐藏文章列表。</li>
-</ul>
-<ol start="3">
-<li>一个文章加多个tags<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tags:</span><br><span class="line">  - 123</span><br><span class="line">  - 456</span><br><span class="line">tags: [123, 456]</span><br></pre></td></tr></table></figure>
-多标签写法，这2种都是一样的效果，用哪个都可以</li>
-<li>冷知识 使用hexo查看本地访问量数目回不对，上传后正确</li>
-<li>一个文章加多个categories<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 这是默认的写法，给文章添加一个分类。</span><br><span class="line">categories: 123</span><br><span class="line"># 这会将文章分类123/456子分类目录下。</span><br><span class="line">categories: [123, 456]</span><br><span class="line">这会将文章分类到123/456子分类目录下。</span><br><span class="line">categories:</span><br><span class="line">   - 123</span><br><span class="line">   - 456</span><br><span class="line">多标签写法，文章被分类到123、456以及123的自分类789这3个分类下面，官方指定写法。</span><br><span class="line">categories:</span><br><span class="line">   - [123]</span><br><span class="line">   - [456]</span><br><span class="line">   - [123, 789]</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="在Typora中的图片设置"><a href="#在Typora中的图片设置" class="headerlink" title="在Typora中的图片设置"></a>在Typora中的图片设置</h3><p><em>由于本博客搭建在服务器上，所以图像文件上传至服务器而不使用图床</em></p>
-<ol>
-<li>根据多次尝试有以下方案</li>
-</ol>
-<ul>
-<li>上传至GitHub作为图床，再使用picgo与本地typora连接，缺点就是访问太慢需要VPN。<em>设置的时候有问题，按网上教程配置好之后，有问题可以尝试一下将图床设置改为设为默认设置</em></li>
-<li>使用其他图床，需付费，访问速度快但是要付费，长期发展不合适。</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>个人博客</tag>
-      </tags>
   </entry>
   <entry>
     <title>大学生网课快速学习指南</title>
@@ -214,36 +244,6 @@
 ]]></content>
       <tags>
         <tag>HarmonyOS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>将本地hexo迁移至阿里云轻量应用服务器</title>
-    <url>/2023/12/17/%E5%B0%86%E6%9C%AC%E5%9C%B0hexo%E8%BF%81%E7%A7%BB%E8%87%B3%E9%98%BF%E9%87%8C%E4%BA%91%E8%BD%BB%E9%87%8F%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
-    <content><![CDATA[<p><em>在root环境下</em></p>
-<ol>
-<li>配置服务器80端口<em>参照<a href="https://blog.csdn.net/CLOUD_J/article/details/104697089">https://blog.csdn.net/CLOUD_J/article/details/104697089</a></em></li>
-<li>安装nginx</li>
-</ol>
-<ul>
-<li>使用命令行<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">yum insatll -y nginx</span><br><span class="line">启动服务器：</span><br><span class="line">systemctl start nginx</span><br><span class="line">systemctl enable nginx</span><br><span class="line">出现create...</span><br></pre></td></tr></table></figure></li>
-</ul>
-<ol start="3">
-<li>补充：远程连接自己服务器<em>参考：<a href="https://blog.csdn.net/qq_42249896/article/details/85200327">https://blog.csdn.net/qq_42249896/article/details/85200327</a></em></li>
-<li>linux命令<em>参考菜鸟教程：<a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></em></li>
-</ol>
-<ul>
-<li>不保存退出命令为：:q!<br>5.查看ssh公钥 <em>参考：<a href="https://blog.csdn.net/qq_36631580/article/details/123530578">https://blog.csdn.net/qq_36631580/article/details/123530578</a></em></li>
-<li>本机存在ssh key<br>在安装Git前提下，打开Git Bash Here<br>输入 cd ~&#x2F;.ssh 进入到.ssh 文件夹</li>
-</ul>
-<p>输入 ls 查看.ssh 文件夹里面的文件，有 【id_rsa】【 id_rsa.pub】 known_hosts ，ssh秘钥就在 id_rsa.pub文件里</p>
-<p>id_rsa是私钥，不能泄露出去<br>id_rsa.pub是公钥，可以放心地告诉任何人<br>输入cat id_rsa.pu，直接复制ssh秘钥即可</p>
-<p>若需要找秘钥文件路径的话，输入pwd，就可以看到路径了</p>
-<p>【windows】Git中添加密钥、ssh密钥的创建与查看（打开id_rsa.pub文件）<br>参考<em><a href="https://blog.csdn.net/qq_41539778/article/details/109114980#:~:text=2%E3%80%81%E6%9F%A5%E7%9C%8B%E5%AF%86%E9%92%A5%201%EF%BC%89%E5%9C%A8%E5%88%9A%E6%89%8DC%E7%9B%98%E5%88%9B%E5%BB%BAssh%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E6%89%BE%E5%88%B0.s%20sh%E6%96%87%E4%BB%B6%20%EF%BC%8C.ssh%E4%B8%AD%E6%9C%89%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E3%80%90id_rsa.pub%E3%80%91%2C%E5%88%9B%E5%BB%BA%E7%9A%84%E5%AF%86%E9%92%A5%E5%B0%B1%E5%82%A8%E5%AD%98%E5%9C%A8%E8%BF%99%E9%87%8C%EF%BC%8C%E4%BD%86%E6%98%AF%E4%B8%8D%E8%83%BD%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80%EF%BC%8C,2%EF%BC%89%E7%94%A8windows%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%EF%BC%8C%E8%BF%9B%E5%85%A5.ssh%20%E4%B8%AD%E7%9A%84%203%EF%BC%89%E7%94%A8%E5%91%BD%E4%BB%A4%E3%80%90more%20id_rsa.pub%E3%80%91%E8%8E%B7%E5%8F%96%E5%86%85%E5%AE%B9%EF%BC%8C%E4%B8%8B%E9%9D%A2%E8%BF%99%E4%B8%B2%E5%B0%B1%E6%98%AF%E4%BD%A0%E7%9A%84%E5%AF%86%E9%92%A5%EF%BC%88%E5%8F%AF%E4%BB%A5%E5%A4%8D%E5%88%B6%E4%B8%8B%E6%9D%A5%EF%BC%89%E3%80%82">https://blog.csdn.net/qq_41539778/article/details/109114980#:~:text=2%E3%80%81%E6%9F%A5%E7%9C%8B%E5%AF%86%E9%92%A5%201%EF%BC%89%E5%9C%A8%E5%88%9A%E6%89%8DC%E7%9B%98%E5%88%9B%E5%BB%BAssh%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E6%89%BE%E5%88%B0.s%20sh%E6%96%87%E4%BB%B6%20%EF%BC%8C.ssh%E4%B8%AD%E6%9C%89%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E3%80%90id_rsa.pub%E3%80%91%2C%E5%88%9B%E5%BB%BA%E7%9A%84%E5%AF%86%E9%92%A5%E5%B0%B1%E5%82%A8%E5%AD%98%E5%9C%A8%E8%BF%99%E9%87%8C%EF%BC%8C%E4%BD%86%E6%98%AF%E4%B8%8D%E8%83%BD%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80%EF%BC%8C,2%EF%BC%89%E7%94%A8windows%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%EF%BC%8C%E8%BF%9B%E5%85%A5.ssh%20%E4%B8%AD%E7%9A%84%203%EF%BC%89%E7%94%A8%E5%91%BD%E4%BB%A4%E3%80%90more%20id_rsa.pub%E3%80%91%E8%8E%B7%E5%8F%96%E5%86%85%E5%AE%B9%EF%BC%8C%E4%B8%8B%E9%9D%A2%E8%BF%99%E4%B8%B2%E5%B0%B1%E6%98%AF%E4%BD%A0%E7%9A%84%E5%AF%86%E9%92%A5%EF%BC%88%E5%8F%AF%E4%BB%A5%E5%A4%8D%E5%88%B6%E4%B8%8B%E6%9D%A5%EF%BC%89%E3%80%82</a></em></p>
-<p>Windows系统如何查看本机ssh公钥？<br>参考：<em><a href="https://blog.csdn.net/qq_36631580/article/details/123530578">https://blog.csdn.net/qq_36631580/article/details/123530578</a></em></p>
-]]></content>
-      <tags>
-        <tag>个人博客</tag>
-        <tag>轻量应用服务器</tag>
       </tags>
   </entry>
   <entry>
@@ -586,18 +586,6 @@
       </tags>
   </entry>
   <entry>
-    <title>留言</title>
-    <url>/messageboard/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[<p>clash</p>
-<p>gpt</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/rubbish/hello-world.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -614,6 +602,23 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[<p>clash</p>
+<p>gpt</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>留言</title>
+    <url>/messageboard/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title></title>
@@ -768,11 +773,6 @@
     <url>/rubbish/cs2.html</url>
     <content><![CDATA[<p><img src="/rubbish/cs2.htm/(1).png" alt="(1)"></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>我的第一篇博客文章</title>
