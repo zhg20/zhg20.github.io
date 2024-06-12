@@ -106,37 +106,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于本地编辑</title>
-    <url>/2023/12/15/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%9C%B0%E7%BC%96%E8%BE%91/</url>
-    <content><![CDATA[<h3 id="Hexo-butterfly-自定义文章封面-主页顶部图片更改"><a href="#Hexo-butterfly-自定义文章封面-主页顶部图片更改" class="headerlink" title="Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改"></a>Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改</h3><p><em>问题来源：在给文章加封面后，实际网页中文章顶部也出现了封面图片</em></p>
-<ol>
-<li>再主页中显示文章封面但是再文章页面不显示封面 <em>参考：<a href="https://blog.csdn.net/qq_43857095/article/details/108306164">https://blog.csdn.net/qq_43857095/article/details/108306164</a></em><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: cs1</span><br><span class="line">date: 2023-12-15 20:11:21</span><br><span class="line">tags: 测试</span><br><span class="line">top_img: false # 文章顶部图不显示</span><br><span class="line">cover: https://b.zhutix.com/bizhi/yuan-shu/08.jpg # 显示封面</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
-<li>隐藏文章 <em>参考：<a href="https://www.cnblogs.com/yangstar/articles/16690342.html#:~:text=%E5%AE%89%E8%A3%85%20%E5%9C%A8%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%A7%E8%A1%8C%20npm,install%20hexo-hide-posts%20--save">https://www.cnblogs.com/yangstar/articles/16690342.html#:~:text=%E5%AE%89%E8%A3%85%20%E5%9C%A8%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%A7%E8%A1%8C%20npm,install%20hexo-hide-posts%20--save</a></em><br>需要安装hexo插件<code>npm install hexo-hide-posts --save</code><br>配置_config.yml<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># hexo-hide-posts</span><br><span class="line">hide_posts:</span><br><span class="line">  # 可以改成其他你喜欢的名字</span><br><span class="line">  filter: hidden  #隐藏文件</span><br><span class="line">  # 指定你想要传递隐藏文章的位置，比如让所有隐藏文章在存档页面可见</span><br><span class="line">  # 常见的位置有：index, tag, category, archive, sitemap, feed, etc.</span><br><span class="line">  # 留空则默认全部隐藏</span><br><span class="line">  public_generators: []</span><br><span class="line">  # 为隐藏的文章添加 noindex meta 标签，阻止搜索引擎收录</span><br><span class="line">  noindex: true</span><br></pre></td></tr></table></figure>
-设置 filter: secret 之后，你就可以在 front-matter 中使用 secret: true 来隐藏文章了。<br>使用<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#hidden: true # 文章的md文件头部加入此代码</span><br><span class="line">#如下</span><br><span class="line">---</span><br><span class="line">title: cs1</span><br><span class="line">date: 2023-12-15 20:11:21</span><br><span class="line">tags: 测试</span><br><span class="line">top_img: false # 文章顶部图不显示</span><br><span class="line">cover: https://b.zhutix.com/bizhi/yuan-shu/08.jpg # 显示封面</span><br><span class="line">hidden: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li>你可以在命令行运行 hexo hidden:list 来获取当前所有的已隐藏文章列表。</li>
-</ul>
-<ol start="3">
-<li>一个文章加多个tags<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tags:</span><br><span class="line">  - 123</span><br><span class="line">  - 456</span><br><span class="line">tags: [123, 456]</span><br></pre></td></tr></table></figure>
-多标签写法，这2种都是一样的效果，用哪个都可以</li>
-<li>冷知识 使用hexo查看本地访问量数目回不对，上传后正确</li>
-<li>一个文章加多个categories<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 这是默认的写法，给文章添加一个分类。</span><br><span class="line">categories: 123</span><br><span class="line"># 这会将文章分类123/456子分类目录下。</span><br><span class="line">categories: [123, 456]</span><br><span class="line">这会将文章分类到123/456子分类目录下。</span><br><span class="line">categories:</span><br><span class="line">   - 123</span><br><span class="line">   - 456</span><br><span class="line">多标签写法，文章被分类到123、456以及123的自分类789这3个分类下面，官方指定写法。</span><br><span class="line">categories:</span><br><span class="line">   - [123]</span><br><span class="line">   - [456]</span><br><span class="line">   - [123, 789]</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="在Typora中的图片设置"><a href="#在Typora中的图片设置" class="headerlink" title="在Typora中的图片设置"></a>在Typora中的图片设置</h3><p><em>由于本博客搭建在服务器上，所以图像文件上传至服务器而不使用图床</em></p>
-<ol>
-<li>根据多次尝试有以下方案</li>
-</ol>
-<ul>
-<li>上传至GitHub作为图床，再使用picgo与本地typora连接，缺点就是访问太慢需要VPN。<em>设置的时候有问题，按网上教程配置好之后，有问题可以尝试一下将图床设置改为设为默认设置</em></li>
-<li>使用其他图床，需付费，访问速度快但是要付费，长期发展不合适。</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>个人博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>创建谷歌账号</title>
     <url>/2024/05/30/%E5%88%9B%E5%BB%BA%E8%B0%B7%E6%AD%8C%E8%B4%A6%E5%8F%B7/</url>
     <content><![CDATA[<h3 id="关于注册谷歌账号时遇到的问题"><a href="#关于注册谷歌账号时遇到的问题" class="headerlink" title="关于注册谷歌账号时遇到的问题"></a>关于注册谷歌账号时遇到的问题</h3><p><strong>省流:在谷歌浏览器中只留下英语,重启浏览器进行谷歌账号注册</strong></p>
@@ -158,71 +127,6 @@
 <li>科学上网</li>
 </ol>
 ]]></content>
-  </entry>
-  <entry>
-    <title>大学生网课快速学习指南</title>
-    <url>/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<h2 id="使用油猴脚本进行网课快速学习（刷课）"><a href="#使用油猴脚本进行网课快速学习（刷课）" class="headerlink" title="使用油猴脚本进行网课快速学习（刷课）"></a>使用油猴脚本进行网课快速学习（刷课）</h2><p><em>刷课，老生常谈的问题了，但是还是有些大学生不会哈（至少我身边的还有些不会），所以就写了这一篇教程来帮助各位大学生</em></p>
-<h3 id="如何安装油猴脚本"><a href="#如何安装油猴脚本" class="headerlink" title="如何安装油猴脚本"></a>如何安装油猴脚本</h3><p><em>以Windows自带的Edge浏览器示例</em></p>
-<ol>
-<li><p>找到扩展并且点击<br><img src="/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/2.png" alt="2"></p>
-</li>
-<li><p>点击**<a href="https://microsoftedge.microsoft.com/addons?hl=zh-CN">获取 Microsoft Edge 扩展</a>**</p>
-<p><img src="/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/3.png" alt="3"></p>
-</li>
-<li><p>搜索<strong>篡改猴</strong><br><img src="/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/4.png" alt="4"></p>
-</li>
-<li><p>选择第二个绿色背景</p>
-<p><img src="/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/5.png" alt="5"></p>
-</li>
-<li><p>无脑安装即可</p>
-</li>
-</ol>
-<h3 id="如何寻找刷课插件"><a href="#如何寻找刷课插件" class="headerlink" title="如何寻找刷课插件"></a>如何寻找刷课插件</h3><ol>
-<li>进入网址<em><a href="https://greasyfork.org/zh-CN">https://greasyfork.org/zh-CN</a></em></li>
-<li>在搜索框里输入<em>chaoxing.com</em></li>
-<li>选择其中一个安装即可</li>
-<li>关闭浏览器重新进入学习通网站</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>油猴脚本</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习HarmonyOS</title>
-    <url>/2024/01/26/%E5%AD%A6%E4%B9%A0HarmonyOS/</url>
-    <content><![CDATA[<h2 id="HarmonyOS的学习历程"><a href="#HarmonyOS的学习历程" class="headerlink" title="HarmonyOS的学习历程"></a>HarmonyOS的学习历程</h2><h3 id="下载对应IDE和配置开发环境"><a href="#下载对应IDE和配置开发环境" class="headerlink" title="下载对应IDE和配置开发环境"></a>下载对应IDE和配置开发环境</h3><ol>
-<li>在官方文档中下载DevEco Studio</li>
-<li>出现问题</li>
-</ol>
-<ul>
-<li>ohpm安装失败</li>
-<li>npm无法联网</li>
-<li>![屏幕截图 2024-01-26 163617](学习HarmonyOS&#x2F;屏幕截图 2024-01-26 163617.png)</li>
-<li><img src="/2024/01/26/%E5%AD%A6%E4%B9%A0HarmonyOS/1.png" alt="1"><br><em>图中npm registry access的地方也报红，此图为解决后的图</em></li>
-</ul>
-<ol start="3">
-<li>解决问题</li>
-</ol>
-<ul>
-<li>ohpm的安装需要npm的源，所以先解决npm源的问题</li>
-<li>在npm registry access中选择华为的源</li>
-<li>然后在ohpm setup中点击set it up now</li>
-</ul>
-<h3 id="运行helloworld"><a href="#运行helloworld" class="headerlink" title="运行helloworld"></a>运行helloworld</h3><ol>
-<li>在右侧预览区域出现Build task failed. Open the Run window to view details.</li>
-</ol>
-<ul>
-<li>在设置中，找到Build-&gt;Hvigor将Enable the Daemon for tasks选项给关掉</li>
-</ul>
-<ol start="2">
-<li>区分大小写。大小写错误也会报错以上的问题</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>HarmonyOS</tag>
-      </tags>
   </entry>
   <entry>
     <title>临时写点东西</title>
@@ -309,6 +213,102 @@
 <li>服务器到期怎么迁移服务器？</li>
 </ol>
 ]]></content>
+  </entry>
+  <entry>
+    <title>关于本地编辑</title>
+    <url>/2023/12/15/%E5%85%B3%E4%BA%8E%E6%9C%AC%E5%9C%B0%E7%BC%96%E8%BE%91/</url>
+    <content><![CDATA[<h3 id="Hexo-butterfly-自定义文章封面-主页顶部图片更改"><a href="#Hexo-butterfly-自定义文章封面-主页顶部图片更改" class="headerlink" title="Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改"></a>Hexo butterfly 自定义文章封面 &amp;&amp; 主页顶部图片更改</h3><p><em>问题来源：在给文章加封面后，实际网页中文章顶部也出现了封面图片</em></p>
+<ol>
+<li>再主页中显示文章封面但是再文章页面不显示封面 <em>参考：<a href="https://blog.csdn.net/qq_43857095/article/details/108306164">https://blog.csdn.net/qq_43857095/article/details/108306164</a></em><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: cs1</span><br><span class="line">date: 2023-12-15 20:11:21</span><br><span class="line">tags: 测试</span><br><span class="line">top_img: false # 文章顶部图不显示</span><br><span class="line">cover: https://b.zhutix.com/bizhi/yuan-shu/08.jpg # 显示封面</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
+<li>隐藏文章 <em>参考：<a href="https://www.cnblogs.com/yangstar/articles/16690342.html#:~:text=%E5%AE%89%E8%A3%85%20%E5%9C%A8%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%A7%E8%A1%8C%20npm,install%20hexo-hide-posts%20--save">https://www.cnblogs.com/yangstar/articles/16690342.html#:~:text=%E5%AE%89%E8%A3%85%20%E5%9C%A8%E7%AB%99%E7%82%B9%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%A7%E8%A1%8C%20npm,install%20hexo-hide-posts%20--save</a></em><br>需要安装hexo插件<code>npm install hexo-hide-posts --save</code><br>配置_config.yml<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># hexo-hide-posts</span><br><span class="line">hide_posts:</span><br><span class="line">  # 可以改成其他你喜欢的名字</span><br><span class="line">  filter: hidden  #隐藏文件</span><br><span class="line">  # 指定你想要传递隐藏文章的位置，比如让所有隐藏文章在存档页面可见</span><br><span class="line">  # 常见的位置有：index, tag, category, archive, sitemap, feed, etc.</span><br><span class="line">  # 留空则默认全部隐藏</span><br><span class="line">  public_generators: []</span><br><span class="line">  # 为隐藏的文章添加 noindex meta 标签，阻止搜索引擎收录</span><br><span class="line">  noindex: true</span><br></pre></td></tr></table></figure>
+设置 filter: secret 之后，你就可以在 front-matter 中使用 secret: true 来隐藏文章了。<br>使用<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#hidden: true # 文章的md文件头部加入此代码</span><br><span class="line">#如下</span><br><span class="line">---</span><br><span class="line">title: cs1</span><br><span class="line">date: 2023-12-15 20:11:21</span><br><span class="line">tags: 测试</span><br><span class="line">top_img: false # 文章顶部图不显示</span><br><span class="line">cover: https://b.zhutix.com/bizhi/yuan-shu/08.jpg # 显示封面</span><br><span class="line">hidden: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li>你可以在命令行运行 hexo hidden:list 来获取当前所有的已隐藏文章列表。</li>
+</ul>
+<ol start="3">
+<li>一个文章加多个tags<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tags:</span><br><span class="line">  - 123</span><br><span class="line">  - 456</span><br><span class="line">tags: [123, 456]</span><br></pre></td></tr></table></figure>
+多标签写法，这2种都是一样的效果，用哪个都可以</li>
+<li>冷知识 使用hexo查看本地访问量数目回不对，上传后正确</li>
+<li>一个文章加多个categories<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 这是默认的写法，给文章添加一个分类。</span><br><span class="line">categories: 123</span><br><span class="line"># 这会将文章分类123/456子分类目录下。</span><br><span class="line">categories: [123, 456]</span><br><span class="line">这会将文章分类到123/456子分类目录下。</span><br><span class="line">categories:</span><br><span class="line">   - 123</span><br><span class="line">   - 456</span><br><span class="line">多标签写法，文章被分类到123、456以及123的自分类789这3个分类下面，官方指定写法。</span><br><span class="line">categories:</span><br><span class="line">   - [123]</span><br><span class="line">   - [456]</span><br><span class="line">   - [123, 789]</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="在Typora中的图片设置"><a href="#在Typora中的图片设置" class="headerlink" title="在Typora中的图片设置"></a>在Typora中的图片设置</h3><p><em>由于本博客搭建在服务器上，所以图像文件上传至服务器而不使用图床</em></p>
+<ol>
+<li>根据多次尝试有以下方案</li>
+</ol>
+<ul>
+<li>上传至GitHub作为图床，再使用picgo与本地typora连接，缺点就是访问太慢需要VPN。<em>设置的时候有问题，按网上教程配置好之后，有问题可以尝试一下将图床设置改为设为默认设置</em></li>
+<li>使用其他图床，需付费，访问速度快但是要付费，长期发展不合适。</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>个人博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大学生网课快速学习指南</title>
+    <url>/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<h2 id="使用油猴脚本进行网课快速学习（刷课）"><a href="#使用油猴脚本进行网课快速学习（刷课）" class="headerlink" title="使用油猴脚本进行网课快速学习（刷课）"></a>使用油猴脚本进行网课快速学习（刷课）</h2><p><em>刷课，老生常谈的问题了，但是还是有些大学生不会哈（至少我身边的还有些不会），所以就写了这一篇教程来帮助各位大学生</em></p>
+<h3 id="如何安装油猴脚本"><a href="#如何安装油猴脚本" class="headerlink" title="如何安装油猴脚本"></a>如何安装油猴脚本</h3><p><em>以Windows自带的Edge浏览器示例</em></p>
+<ol>
+<li><p>找到扩展并且点击<br><img src="/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/2.png" alt="2"></p>
+</li>
+<li><p>点击**<a href="https://microsoftedge.microsoft.com/addons?hl=zh-CN">获取 Microsoft Edge 扩展</a>**</p>
+<p><img src="/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/3.png" alt="3"></p>
+</li>
+<li><p>搜索<strong>篡改猴</strong><br><img src="/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/4.png" alt="4"></p>
+</li>
+<li><p>选择第二个绿色背景</p>
+<p><img src="/2024/04/10/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/5.png" alt="5"></p>
+</li>
+<li><p>无脑安装即可</p>
+</li>
+</ol>
+<h3 id="如何寻找刷课插件"><a href="#如何寻找刷课插件" class="headerlink" title="如何寻找刷课插件"></a>如何寻找刷课插件</h3><ol>
+<li>进入网址<em><a href="https://greasyfork.org/zh-CN">https://greasyfork.org/zh-CN</a></em></li>
+<li>在搜索框里输入<em>chaoxing.com</em></li>
+<li>选择其中一个安装即可</li>
+<li>关闭浏览器重新进入学习通网站</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>油猴脚本</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习HarmonyOS</title>
+    <url>/2024/01/26/%E5%AD%A6%E4%B9%A0HarmonyOS/</url>
+    <content><![CDATA[<h2 id="HarmonyOS的学习历程"><a href="#HarmonyOS的学习历程" class="headerlink" title="HarmonyOS的学习历程"></a>HarmonyOS的学习历程</h2><h3 id="下载对应IDE和配置开发环境"><a href="#下载对应IDE和配置开发环境" class="headerlink" title="下载对应IDE和配置开发环境"></a>下载对应IDE和配置开发环境</h3><ol>
+<li>在官方文档中下载DevEco Studio</li>
+<li>出现问题</li>
+</ol>
+<ul>
+<li>ohpm安装失败</li>
+<li>npm无法联网</li>
+<li>![屏幕截图 2024-01-26 163617](学习HarmonyOS&#x2F;屏幕截图 2024-01-26 163617.png)</li>
+<li><img src="/2024/01/26/%E5%AD%A6%E4%B9%A0HarmonyOS/1.png" alt="1"><br><em>图中npm registry access的地方也报红，此图为解决后的图</em></li>
+</ul>
+<ol start="3">
+<li>解决问题</li>
+</ol>
+<ul>
+<li>ohpm的安装需要npm的源，所以先解决npm源的问题</li>
+<li>在npm registry access中选择华为的源</li>
+<li>然后在ohpm setup中点击set it up now</li>
+</ul>
+<h3 id="运行helloworld"><a href="#运行helloworld" class="headerlink" title="运行helloworld"></a>运行helloworld</h3><ol>
+<li>在右侧预览区域出现Build task failed. Open the Run window to view details.</li>
+</ol>
+<ul>
+<li>在设置中，找到Build-&gt;Hvigor将Enable the Daemon for tasks选项给关掉</li>
+</ul>
+<ol start="2">
+<li>区分大小写。大小写错误也会报错以上的问题</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>HarmonyOS</tag>
+      </tags>
   </entry>
   <entry>
     <title>将本地hexo迁移至阿里云轻量应用服务器</title>
@@ -595,6 +595,9 @@
     <content><![CDATA[<h1 id="使用李跳跳软件进行去广告"><a href="#使用李跳跳软件进行去广告" class="headerlink" title="使用李跳跳软件进行去广告"></a>使用李跳跳软件进行去广告</h1><p><em>推荐一下我正在用去广告的软件</em></p>
 <h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><h2 id="软件导入规则"><a href="#软件导入规则" class="headerlink" title="软件导入规则"></a>软件导入规则</h2><p><em>这里主要分享规则</em><br><strong>代码块右上方带有复制按钮，然后导入规则</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[&#123;&quot;-266832869&quot;:&quot;&#123;\&quot;ltt_service\&quot;:false&#125;&quot;&#125;,&#123;&quot;-1220851267&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;layout_young_tips\&quot;,\&quot;action\&quot;:\&quot;ok_btn\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;授权地理位置权限\&quot;,\&quot;action\&quot;:\&quot;btn_cancel\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;195210534&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;升级版本\&quot;,\&quot;action\&quot;:\&quot;关闭\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;收到一个现金红包\&quot;,\&quot;action\&quot;:\&quot;关闭\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1519628819&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;tt_splash_ad_logo\&quot;,\&quot;action\&quot;:\&quot;tt_splash_skip_btn\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;2029054607&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;tt_splash_ad_logo\&quot;,\&quot;action\&quot;:\&quot;tt_splash_skip_btn\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-524659007&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;不感兴趣\&quot;,\&quot;action\&quot;:\&quot;不感兴趣\&quot;,\&quot;times\&quot;:5&#125;]&#125;&quot;&#125;,&#123;&quot;2092879561&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;青少年守护\&quot;,\&quot;action\&quot;:\&quot;已满14岁\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;cancelButton\&quot;,\&quot;action\&quot;:\&quot;cancelButton\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;去&amp;应用市场&amp;评价\&quot;,\&quot;action\&quot;:\&quot;取消\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1366626055&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;tv_teen_dialog_title\&quot;,\&quot;action\&quot;:\&quot;young_dialog_close_img\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;txt_push_open_title\&quot;,\&quot;action\&quot;:\&quot;btn_open_cancel\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;七猫新人红包\&quot;,\&quot;action\&quot;:\&quot;iv_close_bonus\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;red_packet_img\&quot;,\&quot;action\&quot;:\&quot;close_red_packet\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;imageView\&quot;,\&quot;action\&quot;:\&quot;imageView_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;read_view\&quot;,\&quot;action\&quot;:\&quot;close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;ad_privacy_view\&quot;,\&quot;action\&quot;:\&quot;iv_ad_direct_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;ll_ad_bottom_remind_group\&quot;,\&quot;action\&quot;:\&quot;ad_direct_close\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;293886959&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;抢先体验\&quot;,\&quot;action\&quot;:\&quot;取消\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1276497535&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;有新版本&amp;升级\&quot;,\&quot;action\&quot;:\&quot;暂不升级\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;bar_close\&quot;,\&quot;action\&quot;:\&quot;bar_close\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;28505069&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;dialog_once_price_iv_buy\&quot;,\&quot;action\&quot;:\&quot;dialog_once_price_iv_cancel\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;651433099&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;发现新版本\&quot;,\&quot;action\&quot;:\&quot;暂不更新\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;开启消息通知\&quot;,\&quot;action\&quot;:\&quot;notice_dialog_cancel_iv\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;打开消息通知\&quot;,\&quot;action\&quot;:\&quot;close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;订阅微信通知\&quot;,\&quot;action\&quot;:\&quot;cancel_iv\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;写好评，鼓励一下\&quot;,\&quot;action\&quot;:\&quot;不了，谢谢\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;725735704&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;青少年守护模式\&quot;,\&quot;action\&quot;:\&quot;tv_confirm\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-1960346768&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;ad_content\&quot;,\&quot;action\&quot;:\&quot;btnClose\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1683280386&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;发现&amp;新版本&amp;立即升级\&quot;,\&quot;action\&quot;:\&quot;GLOBAL_ACTION_BACK\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;青少年模式\&quot;,\&quot;action\&quot;:\&quot;我知道了\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1073158053&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;新版本\&quot;,\&quot;action\&quot;:\&quot;取消\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;dialog_full_image\&quot;,\&quot;action\&quot;:\&quot;dialog_full_image_close\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1596265335&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;青少年模式\&quot;,\&quot;action\&quot;:\&quot;我知道了\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;fl_newcomer_gift\&quot;,\&quot;action\&quot;:\&quot;iv_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;banner_icon_iv\&quot;,\&quot;action\&quot;:\&quot;colse_iv\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;tv_usercenter_notify_title\&quot;,\&quot;action\&quot;:\&quot;iv_usercenter_notify_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;VIP限时超低价\&quot;,\&quot;action\&quot;:\&quot;icon_close_popup\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;ad_name_tv\&quot;,\&quot;action\&quot;:\&quot;ad_close_iv\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;free_mode_dialog_image\&quot;,\&quot;action\&quot;:\&quot;dialog_close_btn\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1984799751&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;da_container\&quot;,\&quot;action\&quot;:\&quot;closeAd\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;itah_layout\&quot;,\&quot;action\&quot;:\&quot;closeAd\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;iltas_ad_layout\&quot;,\&quot;action\&quot;:\&quot;closeAd\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1536737232&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;打开通知，及时收到互动消息\&quot;,\&quot;action\&quot;:\&quot;right_icon\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;选择通知类型\&quot;,\&quot;action\&quot;:\&quot;暂不开启\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;bottom_process_tv\&quot;,\&quot;action\&quot;:\&quot;close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;使用您的位置信息\&quot;,\&quot;action\&quot;:\&quot;以后再说\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;tv_tips\&quot;,\&quot;action\&quot;:\&quot;iv_close_icon\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;不感兴趣&amp;为何会看到此广告\&quot;,\&quot;action\&quot;:\&quot;不感兴趣\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;tv_tips\&quot;,\&quot;action\&quot;:\&quot;iv_close_icon\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;不感兴趣&amp;屏蔽此博主\&quot;,\&quot;action\&quot;:\&quot;不感兴趣\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;left_img_ad_tag\&quot;,\&quot;action\&quot;:\&quot;close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;关注你感兴趣的超话\&quot;,\&quot;action\&quot;:\&quot;iv_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;定位服务未开启\&quot;,\&quot;action\&quot;:\&quot;以后再说\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;点击签到\&quot;,\&quot;action\&quot;:\&quot;GLOBAL_ACTION_BACK\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;给我们评分\&quot;,\&quot;action\&quot;:\&quot;不了，谢谢\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;card_view\&quot;,\&quot;action\&quot;:\&quot;right_top_tag\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;不感兴趣&amp;内容质量差\&quot;,\&quot;action\&quot;:\&quot;不感兴趣\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;错过了&amp;爆词&amp;查看详情\&quot;,\&quot;action\&quot;:\&quot;mIvRight\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-1709882794&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;update_title\&quot;,\&quot;action\&quot;:\&quot;btn_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;bottom_center_close_button\&quot;,\&quot;action\&quot;:\&quot;bottom_center_close_button\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;订单已满&amp;优惠换购\&quot;,\&quot;action\&quot;:\&quot;放弃机会\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;恭喜你获得以下权益\&quot;,\&quot;action\&quot;:\&quot;GLOBAL_ACTION_BACK\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;popContentImg\&quot;,\&quot;action\&quot;:\&quot;popCloseBtn\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-527086868&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;gift_img\&quot;,\&quot;action\&quot;:\&quot;gift_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;打开系统通知\&quot;,\&quot;action\&quot;:\&quot;iv_close\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-322418038&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;upgrade_dialog_cancel\&quot;,\&quot;action\&quot;:\&quot;upgrade_dialog_cancel\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;502255059&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;青少年模式\&quot;,\&quot;action\&quot;:\&quot;我知道了\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;开启消息通知\&quot;,\&quot;action\&quot;:\&quot;arg\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1765779203&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;red_packet_content\&quot;,\&quot;action\&quot;:\&quot;red_packet_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;bn_\&quot;,\&quot;action\&quot;:\&quot;bs3\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;添加桌面小组件\&quot;,\&quot;action\&quot;:\&quot;GLOBAL_ACTION_BACK\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-747700391&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;立即免费领取\&quot;,\&quot;action\&quot;:\&quot;ivClose\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;新用户福利仅一次\&quot;,\&quot;action\&quot;:\&quot;放弃福利\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;开通会员&amp;特惠\&quot;,\&quot;action\&quot;:\&quot;ivClose\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-557467920&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;开启消息通知\&quot;,\&quot;action\&quot;:\&quot;取消\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-1031558479&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;发现新版本\&quot;,\&quot;action\&quot;:\&quot;GLOBAL_ACTION_BACK\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;送你&amp;新人购物券\&quot;,\&quot;action\&quot;:\&quot;GLOBAL_ACTION_BACK\&quot;&#125;,]&#125;&quot;&#125;,&#123;&quot;-895188853&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;huyaui_float_notify_count_close\&quot;,\&quot;action\&quot;:\&quot;huyaui_float_notify_count_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;开启通知，不错过订阅的主播开播\&quot;,\&quot;action\&quot;:\&quot;iv_right\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;push_popup_sec_txt\&quot;,\&quot;action\&quot;:\&quot;GLOBAL_ACTION_BACK\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-796004189&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;想给你发送通知\&quot;,\&quot;action\&quot;:\&quot;不允许\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1143986695&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;发现新版本\&quot;,\&quot;action\&quot;:\&quot;tv_ignore_this_version\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;开启系统日历的访问权限\&quot;,\&quot;action\&quot;:\&quot;取消\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1907791813&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;button_open_continue_pay\&quot;,\&quot;action\&quot;:\&quot;close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;新功能\&quot;,\&quot;action\&quot;:\&quot;btn_close\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;332614644&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;首次答题特权\&quot;,\&quot;action\&quot;:\&quot;iv_remind_close\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-2114933808&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;ksad_interstitial_native\&quot;,\&quot;action\&quot;:\&quot;ksad_auto_close_btn\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;ad_area\&quot;,\&quot;action\&quot;:\&quot;close_btn\&quot;,\&quot;delay_popup\&quot;:5000&#125;,&#123;\&quot;id\&quot;:\&quot;img_native\&quot;,\&quot;action\&quot;:\&quot;img_native_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;iv_apk_icon\&quot;,\&quot;action\&quot;:\&quot;iv_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;广告\&quot;,\&quot;action\&quot;:\&quot;跳过\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;tv_feedback_submit\&quot;,\&quot;action\&quot;:\&quot;iv_feedback_close\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;229330387&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;=开启推送通知\&quot;,\&quot;action\&quot;:\&quot;以后再说\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;+开启推送通知\&quot;,\&quot;action\&quot;:\&quot;bn0\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;青少年模式\&quot;,\&quot;action\&quot;:\&quot;=我知道了\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-895263099&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;更新提示\&quot;,\&quot;action\&quot;:\&quot;取消\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-1864872766&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;恭喜获得&amp;红包\&quot;,\&quot;action\&quot;:\&quot;unused_res_a\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;狠心离开&amp;去看看\&quot;,\&quot;action\&quot;:\&quot;狠心离开\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;=logo\&quot;,\&quot;action\&quot;:\&quot;=close\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;847156324&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;=立即更新\&quot;,\&quot;action\&quot;:\&quot;=取消\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;ad_time_view\&quot;,\&quot;action\&quot;:\&quot;=关闭\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;关闭广告\&quot;,\&quot;action\&quot;:\&quot;=不感兴趣\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;不感兴趣&amp;举报广告\&quot;,\&quot;action\&quot;:\&quot;=不感兴趣\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;coolapk_card_view\&quot;,\&quot;action\&quot;:\&quot;close_view\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-524269385&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;青少年模式\&quot;,\&quot;action\&quot;:\&quot;我知道了\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;widget_close_icon\&quot;,\&quot;action\&quot;:\&quot;widget_close_icon\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;关注Ta\&quot;,\&quot;action\&quot;:\&quot;GLOBAL_ACTION_BACK\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-2028968188&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;iv_home_ad_bg\&quot;,\&quot;action\&quot;:\&quot;iv_home_ad_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;iv_invite_icon\&quot;,\&quot;action\&quot;:\&quot;iv_invite_close\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1893781697&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;新版体验邀请\&quot;,\&quot;action\&quot;:\&quot;bt_cancel_experience\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;tv_red_envelop_main_title\&quot;,\&quot;action\&quot;:\&quot;img_cf_view_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;img_floating_ad_cmb\&quot;,\&quot;action\&quot;:\&quot;img_close_floating_ad_cmb\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;定位服务\&quot;,\&quot;action\&quot;:\&quot;btn_mid_center_couple_negative\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;真的要放弃吗\&quot;,\&quot;action\&quot;:\&quot;残忍离开\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;img_cmb_drag_pendant_close\&quot;,\&quot;action\&quot;:\&quot;img_cmb_drag_pendant_close\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-833566134&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;发现新版本\&quot;,\&quot;action\&quot;:\&quot;下次再说\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;239830085&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;发现新版本\&quot;,\&quot;action\&quot;:\&quot;稍后更新\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;限时&amp;星币购买\&quot;,\&quot;action\&quot;:\&quot;GLOBAL_ACTION_BACK\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;关注我\&quot;,\&quot;action\&quot;:\&quot;b3p\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;推送通知&amp;开启\&quot;,\&quot;action\&quot;:\&quot;dhf\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-1518567568&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;请评价我们的产品\&quot;,\&quot;action\&quot;:\&quot;下次再说\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;361910168&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;lpk\&quot;,\&quot;action\&quot;:\&quot;关闭\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;=广告\&quot;,\&quot;action\&quot;:\&quot;=更多\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;=关闭此条广告\&quot;,\&quot;action\&quot;:\&quot;=关闭此条广告\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;=立即前往\&quot;,\&quot;action\&quot;:\&quot;close\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;960022320&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;给您发送通知\&quot;,\&quot;action\&quot;:\&quot;不接收\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1386065562&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;init_top_img\&quot;,\&quot;action\&quot;:\&quot;init_time_text\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;2130042610&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;青少年模式\&quot;,\&quot;action\&quot;:\&quot;我知道了\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-811421306&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;青少年模式\&quot;,\&quot;action\&quot;:\&quot;我知道了\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;mLinSignBg\&quot;,\&quot;action\&quot;:\&quot;imgSignClone\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;打开&amp;推送通知\&quot;,\&quot;action\&quot;:\&quot;以后再说\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-330301876&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;native_ad_container\&quot;,\&quot;action\&quot;:\&quot;topon_btn_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;csj_ad_logo\&quot;,\&quot;action\&quot;:\&quot;csj_btn_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;| 跳过\&quot;,\&quot;action\&quot;:\&quot;| 跳过\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;再看&amp;可领奖励\&quot;,\&quot;action\&quot;:\&quot;坚持退出\&quot;&#125;],\&quot;click_way_popup\&quot;:1&#125;&quot;&#125;,&#123;&quot;320552729&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;立即更新\&quot;,\&quot;action\&quot;:\&quot;稍后更新\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-34617839&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;开启定位权限\&quot;,\&quot;action\&quot;:\&quot;img_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;想获取您的位置信息\&quot;,\&quot;action\&quot;:\&quot;不允许\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-328022007&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;广告\&quot;,\&quot;action\&quot;:\&quot;跳过\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;main_ad_alert\&quot;,\&quot;action\&quot;:\&quot;main_ad_alert_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;slideshowView\&quot;,\&quot;action\&quot;:\&quot;ivClose\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-1048697214&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;青少年模式\&quot;,\&quot;action\&quot;:\&quot;我知道了\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;viewClose\&quot;,\&quot;action\&quot;:\&quot;viewClose\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;fl_video\&quot;,\&quot;action\&quot;:\&quot;iv_highlight_close\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1076661718&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;版本更新\&quot;,\&quot;action\&quot;:\&quot;暂不更新\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-1670877294&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;新版试用\&quot;,\&quot;action\&quot;:\&quot;取消\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;ad_download\&quot;,\&quot;action\&quot;:\&quot;ad_not_interest\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;不感兴趣&amp;投诉\&quot;,\&quot;action\&quot;:\&quot;不感兴趣\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;push_tip_title\&quot;,\&quot;action\&quot;:\&quot;close_tip\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;ad_header_new\&quot;,\&quot;action\&quot;:\&quot;menu_item\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;1875899872&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;开启定位权限\&quot;,\&quot;action\&quot;:\&quot;home_close_img\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;93910113&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;layout_gift\&quot;,\&quot;action\&quot;:\&quot;iv_close\&quot;&#125;,&#123;\&quot;id\&quot;:\&quot;iv_notify\&quot;,\&quot;action\&quot;:\&quot;iv_close\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-2061428528&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;rl_ad_container\&quot;,\&quot;action\&quot;:\&quot;iv_clear\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-506597855&quot;:&quot;&#123;\&quot;popup_rules\&quot;:[&#123;\&quot;id\&quot;:\&quot;版本更新\&quot;,\&quot;action\&quot;:\&quot;取消\&quot;&#125;]&#125;&quot;&#125;,&#123;&quot;-396646979&quot;:&quot;&#123;\&quot;p</span><br></pre></td></tr></table></figure>
+
+<p>复制到txt文件后将倒数的四行删掉</p>
+<p><img src="/2024/06/11/%E6%9D%8E%E8%B7%B3%E8%B7%B3%E5%8E%BB%E5%B9%BF%E5%91%8A/image-20240612232026294.png" alt="image-20240612232026294"></p>
 ]]></content>
       <tags>
         <tag>软件</tag>
@@ -630,22 +633,29 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/rubbish/hello-world.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>标签</title>
     <url>/categories/index.html</url>
     <content><![CDATA[<p>clash</p>
 <p>gpt</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>cs2</title>
-    <url>/rubbish/cs2.html</url>
-    <content><![CDATA[<p><img src="/rubbish/cs2.htm/(1).png" alt="(1)"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>cs</title>
@@ -721,32 +731,9 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/rubbish/hello-world.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>我的第一篇博客文章</title>
-    <url>/rubbish/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0.html</url>
-    <content><![CDATA[<p>##标题1</p>
-<p>内容</p>
-<p>s<br>s</p>
-<p>##标题2</p>
-<p>以下开始测试</p>
-<p>#一级标题<br>##二级标题<br>###三级标题<br><strong>粗体</strong><br><em>斜体</em><br><em><strong>斜粗体</strong></em></p>
+    <title>cs2</title>
+    <url>/rubbish/cs2.html</url>
+    <content><![CDATA[<p><img src="/rubbish/cs2.htm/(1).png" alt="(1)"></p>
 ]]></content>
   </entry>
   <entry>
@@ -822,6 +809,22 @@
 <p>Initialized empty Git repository</p>
 <p>E:\blog&gt;start themes打开文件themes</p>
 <p>hexo更新<br><a href="https://blog.csdn.net/qq_33154343/article/details/108301374">https://blog.csdn.net/qq_33154343/article/details/108301374</a><br>注意 更新时在需在更新包的目录下使用命令进行更新<br><img src="/rubbish/%E4%B8%AA%E4%BA%BA%E5%BB%BA%E7%AB%99.htm/2023-12-14/ESPCjXunOIp0ISZm.png" alt="输入图片说明"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>我的第一篇博客文章</title>
+    <url>/rubbish/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0.html</url>
+    <content><![CDATA[<p>##标题1</p>
+<p>内容</p>
+<p>s<br>s</p>
+<p>##标题2</p>
+<p>以下开始测试</p>
+<p>#一级标题<br>##二级标题<br>###三级标题<br><strong>粗体</strong><br><em>斜体</em><br><em><strong>斜粗体</strong></em></p>
 ]]></content>
   </entry>
   <entry>
